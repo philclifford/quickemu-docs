@@ -5,7 +5,7 @@ Features
 -   **macOS** Monterey, Big Sur, Catalina, Mojave & High Sierra
 -   **Windows** 8.1, 10 and 11 including TPM 2.0
 -   [Ubuntu](https://ubuntu.com/desktop) and all the **[official Ubuntu flavours](https://ubuntu.com/download/flavours)**
--   **And over 30 other operating systems are supported:**
+-   **Over 360 operating system editions are supported!**
 -   Full SPICE support including host/guest clipboard sharing
 -   VirtIO-webdavd file sharing for Linux and Windows guests
 -   VirtIO-9p file sharing for Linux and macOS guests
