@@ -11,16 +11,12 @@ all: ../docs/quickemu.1.md
 clean:
 	rm ../docs/*.md
 	#rm ../docs/*.1
-	#rm ./quickemu.1-08-OtherLinuxGuests02-generated.md
 	rm ./quickemu_conf.lst
-	#rm ./quickemu.1-14-AllquickemuOptions-02generated.md
 	rm ./quickemu.lst
 	rm ./quickget.lst
 	rm ./README_main.md
 	rm ./README.lst
 	rm ./*-generated.md
-#	rm ./quickemu.1-07-Ubuntus02-generated.md
-#	rm ./quickemu.1-08-ZZBSDGuests-generated.md
 
 
 
