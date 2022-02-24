@@ -4,7 +4,7 @@
 Desktop shortcuts can be created for a VM, the shortcuts are saved in `~/.local/share/applications`. Here is an example of how to create a shortcut.
 
 ```bash
-quickemu --vm ubuntu-focal-desktop.conf --shortcut
+quickemu --vm ubuntu-20.04-desktop.conf --shortcut
 ```
 
 ## Screen and window size (Linux guests only)

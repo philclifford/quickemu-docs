@@ -7,8 +7,8 @@ want to run and Quickemu will figure out the best way to do it for you. For
 example:
 
 ```bash
-quickget ubuntu-mate impish
-quickemu --vm ubuntu-mate-impish.conf
+quickget ubuntu-mate 21.10
+quickemu --vm ubuntu-mate-21.10-.conf
 ```
 
 The original objective of the project was to enable quick testing of Linux

@@ -11,7 +11,7 @@ the `spicy` client is installed, available from the `spice-client-gtk` package
 in Debian/Ubuntu.
 
 ```bash
-quickemu --vm ubuntu-focal.conf --display spice
+quickemu --vm ubuntu-20.04.conf --display spice
 ```
 
 ## Headless
@@ -21,12 +21,12 @@ This requires that the `spicy` client is installed, available from the
 `spice-client-gtk` package in Debian/Ubuntu to connect to the running VM
 
 ```bash
-quickemu --vm ubuntu-focal.conf --display none
+quickemu --vm ubuntu-20.04.conf --display none
 ```
 
 You can also use the `.ports` file in the VM directory to lookup what SSH and
 SPICE ports the VM is connected to.
 
 ```bash
-cat ubuntu-focal/ubuntu-focal.ports
+cat ubuntu-20.04/ubuntu-20.04.ports
 ```

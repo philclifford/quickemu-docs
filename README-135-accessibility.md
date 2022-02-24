@@ -4,5 +4,5 @@ Qemu provides support for using BrlAPI to display braille output on a real or fa
 
 
 ```bash
-quickemu --vm ubuntu-impish.conf --braille --display sdl
+quickemu --vm ubuntu-21.10.conf --braille --display sdl
 ```
