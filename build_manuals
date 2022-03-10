@@ -1,4 +1,5 @@
 #!/bin/sh
+
 ../quickemu  --help >quickemu.1-14-AllquickemuOptions-02generated.md
 ../quickget list_csv | awk -F"," '{print "* `" $2 "` ("$1")" }' |grep  -e buntu |sort -u  >quickemu.1-07-Ubuntus02-generated.md
 ../quickget list_csv | awk -F"," '{print "* `" $2 "` ("$1")" }' |grep -v -e 'Display Name' -e windows -e  macos -e buntu |sort -u >quickemu.1-08-OtherOperatingSystems02-generated.md
@@ -10,6 +11,15 @@ echo quickemu.1-0[4-6]* README-06-Install.md quickemu.1-0[7-9]* \
 quickemu.1-1[0-3]* quickemu_conf.1-01-spiceheadless.md README-135-accessibility.md README-135-confoptions.md quickemu.1-1[4-9]* quickemu.1-2* > README.lst
 #
 echo quickemu_conf.1-00-hdr.md  README-135-confoptions.md quickemu_conf.1-05-footer.md > quickemu_conf.lst
+# update date front-matter
+
+sed  -i "s/^date: .*/date: $(date +'%B %e, %Y')/"  \
+    quickemu.1-01-head.md \
+    quickemu_conf.1-00-hdr.md \
+    quickget.1-00-header.md
+
+
+#$(grep -l '^date: ' *)
 
 pandoc -s $(cat quickemu_conf.lst)  -f markdown -t markdown -o ../docs/quickemu_conf.1.md
 pandoc -s $(cat quickemu.lst)  -f markdown -t markdown -o ../docs/quickemu.1.md
