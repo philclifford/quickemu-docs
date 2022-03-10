@@ -18,7 +18,7 @@ sed  -i "s/^date: .*/date: $(date +'%B %e, %Y')/"  \
     quickemu_conf.1-00-hdr.md \
     quickget.1-00-header.md
 
-
+# Previously the list was generated:
 #$(grep -l '^date: ' *)
 
 pandoc -s $(cat quickemu_conf.lst)  -f markdown -t markdown -o ../docs/quickemu_conf.1.md
