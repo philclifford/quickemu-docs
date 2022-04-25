@@ -5,8 +5,8 @@
 virtual machine configuration.
 
 ```bash
-quickget ubuntu 20.04
-quickemu --vm ubuntu-20.04.conf
+quickget ubuntu 22.04
+quickemu --vm ubuntu-22.04.conf
 ```
 
 * Complete the installation as normal.
