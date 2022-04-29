@@ -1,6 +1,8 @@
 # quickemu-docs
 Build environment for Quickemu project documentation
 
+[![CodeFactor](https://www.codefactor.io/repository/github/philclifford/quickemu-docs/badge/main)](https://www.codefactor.io/repository/github/philclifford/quickemu-docs/overview/main)
+
 This is aimed at being a submodule for generating and placing
 documentation and manual pages.
 
