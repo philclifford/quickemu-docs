@@ -7,8 +7,8 @@ want to run and Quickemu will figure out the best way to do it for you. For
 example:
 
 ```bash
-quickget ubuntu-mate 21.10
-quickemu --vm ubuntu-mate-21.10-.conf
+quickget ubuntu-mate 22.04
+quickemu --vm ubuntu-mate-22.04-.conf
 ```
 
 The original objective of the project was to enable quick testing of Linux
