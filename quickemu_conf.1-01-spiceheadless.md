@@ -14,6 +14,8 @@ in Debian/Ubuntu.
 quickemu --vm ubuntu-22.04.conf --display spice
 ```
 
+To enable copy/paste with a Windows guest, install [SPICE Windows guest tools](https://www.spice-space.org/download.html) in the guest VM.
+
 ## Headless
 
 To start a VM with SPICE enabled, but no display attached use `--display none`.
