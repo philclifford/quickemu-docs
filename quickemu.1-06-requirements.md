@@ -22,3 +22,26 @@
 * [xrandr](https://gitlab.freedesktop.org/xorg/app/xrandr)
 * [zsync](http://zsync.moria.org.uk/)
 * [unzip](http://www.info-zip.org/UnZip.html)
+
+### Installing Requirements
+
+For Ubuntu, Arch and nixos systems the [ppa](https://launchpad.net/~flexiondotorg/+archive/ubuntu/quickemu), [AUR](https://aur.archlinux.org/packages/quickemu) or [nix](https://github.com/NixOS/nixpkgs/tree/master/pkgs/development/quickemu) packaging will take care of the dependencies. For other host distributions or operating systems it will be
+necessary to install the above requirements or their equivalents.
+
+These examples may save a little typing
+
+Debian:
+```
+sudo apt install qemu bash coreutils ovmf grep jq lsb procps python3 genisoimage usbutils util-linux sed spice-client-gtk swtpm wget xdg-user-dirs zsync unzip
+```
+Fedora:
+```
+sudo dnf install qemu bash coreutils edk2-tools grep jq lsb procps python3 genisoimage usbutils util-linux sed spice-gtk-tools swtpm wget xdg-user-dirs xrandr unzip
+```
+
+MacOS:
+
+This is a work in progress (see [issue 248](https://github.com/quickemu-project/quickemu/issues/248) for other steps and changes that may enable running on MacOS)
+```
+brew install qemu bash coreutils grep jq python@3.10 cdrtools gnu-sed spice-gtk wget zsync
+```
