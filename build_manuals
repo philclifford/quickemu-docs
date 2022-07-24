@@ -1,6 +1,7 @@
 #!/bin/sh
 
 #../quickemu  --help >quickemu.1-14-AllquickemuOptions-02coggged.md
+cog -e -r quickemu.1-14-AllquickemuOptions-02coggged.md
 ../quickget list_csv | awk -F"," '{print "* `" $2 "` ("$1")" }' |grep  -e buntu |sort -u  >quickemu.1-07-Ubuntus02-generated.md
 ../quickget list_csv | awk -F"," '{print "* `" $2 "` ("$1")" }' |grep -v -e 'Display Name' -e windows -e  macos -e buntu |sort -u >quickemu.1-08-OtherOperatingSystems02-generated.md
 
