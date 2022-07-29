@@ -1,9 +1,11 @@
 #!/bin/sh
 
 #../quickemu  --help >quickemu.1-14-AllquickemuOptions-02coggged.md
-cog -e  XXquickemu.1-14-AllquickemuOptions-02coggged.md > quickemu.1-14-AllquickemuOptions-02coggged.md
+#cog -e  XXquickemu.1-14-AllquickemuOptions-02coggged.md > quickemu.1-14-AllquickemuOptions-02coggged.md
+cp XXquickemu.1-14-AllquickemuOptions-02coggged.md  quickemu.1-14-AllquickemuOptions-02coggged.md
 
-
+# TODO: try build with just the comments and only cog after cp ..
+#       from ..
 ../quickget list_csv | awk -F"," '{print "* `" $2 "` ("$1")" }' |grep  -e buntu |sort -u  >quickemu.1-07-Ubuntus02-generated.md
 ../quickget list_csv | awk -F"," '{print "* `" $2 "` ("$1")" }' |grep -v -e 'Display Name' -e windows -e  macos -e buntu |sort -u >quickemu.1-08-OtherOperatingSystems02-generated.md
 
@@ -29,10 +31,14 @@ sed  -i "s/^date: .*/date: $(date +'%B %e, %Y')/"  \
 pandoc -s $(cat README.lst)  -f markdown -t markdown | grep -v '{=html}' > README_main.md
 #
 cat README-00-hdr.md README_main.md >../README.md
+( cd .. ; cog -r README.md )
 
 ##Previously the list was generated:
 #$(grep -l '^date: ' *)
 ## strip the cog for docs and manuals
+#cog has to run using the right quickemu
+ln -sf ../quickemu .
+
 cog -e -d XXquickemu.1-14-AllquickemuOptions-02coggged.md > quickemu.1-14-AllquickemuOptions-02coggged.md
 
 pandoc -s $(cat quickemu_conf.lst)  -f markdown -t markdown  -o  ../docs/quickemu_conf.1.md
