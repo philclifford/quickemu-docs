@@ -1,0 +1,38 @@
+name: Makefile CI
+
+on:
+  push:
+    branches: [ "testing" ]
+  pull_request:
+    branches: [ "testing" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+  #  - name: configure
+  #    run: ./configure
+  
+    - name: Install dependencies
+      |
+      sudo apt install python3-pip curl
+      curl -sL https://raw.githubusercontent.com/wimpysworld/deb-get/main/deb-get | sudo -E bash -s install deb-get
+      curl -sL https://raw.githubusercontent.com/quickemu-project/quickemu/master/quickemu >quickemu
+      curl -sL https://raw.githubusercontent.com/quickemu-project/quickemu/master/quickget >quickget
+      deb-get install pandoc
+      #pandoc
+      #  better with pandoc via deb-get
+      #sudo apt install curl
+      
+   - name: Run build
+      run: 
+      |
+      make clean
+      make 
+      
+  #  - name: Run distcheck
+  #    run: make distcheck
