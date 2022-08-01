@@ -48,3 +48,18 @@ quickemu --vm vm.conf --screen 0
 The above uses the 2560x1440 screen to compute the size of the window, which
 Quickemu sizes to 2048x1152. Without the `--screen` option, Quickemu would have
 used the 1920x1080 monitor which results in a window size of 1664x936.
+
+## Multiscreen Support
+
+WARNING: This only works reliably if using  `--display spice-app` and requires `virt-viewer` 8.0 or greater.
+If you wish to try given those constraints then to enable multiple screens in your guest add an extra
+`max_outputs` parameter to your `<vm>.conf` file: e.g.
+
+```
+guest_os="linux"
+disk_img="ubuntu-mate-jammy/disk.qcow2"
+iso="ubuntu-mate-devel/ubuntu-mate-devel.iso"
+max_outputs="2"
+```
+
+You may need to consider the relevant [SPICE documentation](https://www.spice-space.org/multiple-monitors.html)
