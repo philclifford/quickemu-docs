@@ -18,6 +18,7 @@ jobs:
   #    run: ./configure
   
     - name: Install dependencies
+      run:
       |
       sudo apt install python3-pip curl
       curl -sL https://raw.githubusercontent.com/wimpysworld/deb-get/main/deb-get | sudo -E bash -s install deb-get
