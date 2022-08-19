@@ -5,7 +5,7 @@ Since Quickemu 2.1.0 `efi` is the default boot option. If you want to override
 this behaviour then add the following line to you VM configuration to enable
 legacy BIOS.
 
-  * `boot="legacy"` - Enable Legacy BIOS boot
+* `boot="legacy"` - Enable Legacy BIOS boot
 
 # Tuning CPU cores, RAM & disks
 
@@ -15,9 +15,9 @@ default behaviour and tune the VM configuration to your liking.
 
 Add additional lines to your virtual machine configuration:
 
-  * `cpu_cores="4"` - Specify the number of CPU cores allocated to the VM
-  * `ram="4G"` - Specify the amount of RAM to allocate to the VM
-  * `disk_size="16G"` - Specify the size of the virtual disk allocated to the VM
+* `cpu_cores="4"` - Specify the number of CPU cores allocated to the VM
+* `ram="4G"` - Specify the amount of RAM to allocate to the VM
+* `disk_size="16G"` - Specify the size of the virtual disk allocated to the VM
 
 ## Disk preallocation
 
@@ -28,14 +28,14 @@ when the image needs to grow.
 Specify what disk preallocation should be used, if any, when creating the system
 disk image by adding a line like this to your VM configuration.
 
-  * `preallocation="metadata"`
+* `preallocation="metadata"`
 
 ## CD-ROM disks
 
 If you want to expose an ISO image from the host to guest add the following line
 to the VM configuration:
 
-   * `fixed_iso="/path/to/image.iso"`
+* `fixed_iso="/path/to/image.iso"`
 
 ## Floppy disks
 
@@ -43,7 +43,7 @@ If you're like [Alan Pope](https://popey.com) you'll probably want to mount a
 floppy disk image in the guest. To do so add the following line to the VM
 configuration:
 
-  * `floppy="/path/to/floppy.img"`
+* `floppy="/path/to/floppy.img"`
 
 # File Sharing
 
@@ -86,7 +86,7 @@ and replacing forward slashes with backslashes (in this example `\\10.0.2.4\qemu
 
 Add an additional line to your virtual machine configuration. For example:
 
-  * `port_forwards=("8123:8123" "8888:80")`
+* `port_forwards=("8123:8123" "8888:80")`
 
 In the example above:
 
@@ -98,7 +98,7 @@ In the example above:
 To completely disable all network interfaces in a guest VM add this additional
 line to your virtual machine configuration:
 
-  * `network="none"`
+* `network="none"`
 
 # Restricted networking
 
@@ -109,14 +109,22 @@ This can be used to prevent software running inside the guest from phoning home
 while still providing a network inside the guest. Add this additional line to
 your virtual machine configuration:
 
-  * `network="restrict"`
+* `network="restrict"`
 
 # Bridged networking
 
 Connect your virtual machine to a preconfigured network bridge. Add an
-additional line to your virtual machine configuration
+additional line to your virtual machine configuration:
 
-  * `network="br0"`
+* `network="br0"`
+
+If you want to have a persistent MAC address for your bridged network interface
+in the gust VM you can add `macaddr` to the virtual machine configuration. QEMU
+requires that the MAC address is in the range: **52:54:00:AB:00:00 - 52:54:00:AB:FF:FF**
+
+So you can generate your own MAC addresses with:
+
+* `macaddr="52:54:00:AB:51:AE"`
 
 # USB redirection
 
@@ -136,7 +144,7 @@ compatibility to older versions of Quickemu. Using SPICE is preferred, see above
 
 Add an additional line to your virtual machine configuration. For example:
 
-  * `usb_devices=("046d:082d" "046d:085e")`
+* `usb_devices=("046d:082d" "046d:085e")`
 
 In the example above:
 

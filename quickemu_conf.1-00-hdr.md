@@ -23,7 +23,6 @@ These are the options and defaults for the \<vm\>.conf file
 ```bash
 # Lowercase variables are used in the VM config file only
 boot="efi"
-bridge=""
 cpu_cores=""
 disk_img=""
 disk_size=""
@@ -32,7 +31,9 @@ floppy=""
 guest_os="linux"
 img=""
 iso=""
+macaddr=""
 macos_release=""
+network=""
 port_forwards=()
 preallocation="off"
 ram=""
@@ -71,6 +72,7 @@ disk_img="windows-11/disk.qcow2"
 iso="windows-11/Win11_EnglishInternational_x64.iso"
 fixed_iso="windows-11/virtio-win.iso"
 tpm="on"
+secureboot="on"
 ```
 
 * `guest_os="windows"` instructs `quickemu` to optimise for Windows.
