@@ -68,6 +68,8 @@ There are some considerations when running macOS via Quickemu.
 * File sharing between guest and host is available via [virtio-9p](https://wiki.qemu.org/Documentation/9psetup) and [SPICE webdavd](https://gitlab.gnome.org/GNOME/phodav/-/merge_requests/24).
 * Copy/paste via SPICE agent is **not available on macOS**.
 
+### macOS App Store
+
 If you see *"Your device or computer could not be verified"* when you try to
 login to the App Store, make sure that your wired ethernet device is `en0`. Use
 `ifconfig` in a terminal to verify this.
