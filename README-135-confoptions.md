@@ -112,13 +112,13 @@ your virtual machine configuration:
   * `network="restrict"`
 
 # Bridged networking
- 
+
 Connect your virtual machine to a preconfigured network bridge. Add an
 additional line to your virtual machine configuration
- 
+
   * `network="br0"`
- 
- # USB redirection
+
+# USB redirection
 
 Quickemu supports USB redirection via SPICE pass-through and host pass-through.
 
