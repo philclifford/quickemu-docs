@@ -15,6 +15,7 @@
 * [usbutils](https://github.com/gregkh/usbutils)
 * [util-linux](https://github.com/karelzak/util-linux)
 * [sed](https://www.gnu.org/software/sed/)
+* [socat](http://www.dest-unreach.org/socat/)
 * [spicy](https://gitlab.freedesktop.org/spice/spice-gtk)
 * [swtpm](https://github.com/stefanberger/swtpm)
 * [Wget](https://www.gnu.org/software/wget/)
