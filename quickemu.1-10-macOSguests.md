@@ -19,7 +19,7 @@ macOS `high-sierra`, `mojave`, `catalina`, `big-sur` and `monterey` are supporte
     * On macOS Mojave and High Sierra
       * Select `QEMU HARDDISK Media` (~103.08GB) from the list and click **Erase**.
   *   Enter a `Name:` for the disk
-      * If your installing macOS Mojave or later (Catalina, Big Sur,
+      * If you are installing macOS Mojave or later (Catalina, Big Sur,
         and Monterey), choose any of the APFS options as the filesystem.
         MacOS Extended may not work.
   *   Click **Erase**.
