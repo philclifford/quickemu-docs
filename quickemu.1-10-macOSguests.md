@@ -14,15 +14,13 @@ macOS `high-sierra`, `mojave`, `catalina`, `big-sur` and `monterey` are supporte
 * Use cursor keys and enter key to select the **macOS Base System**
 * From **macOS Utilities**
   * Click **Disk Utility** and **Continue**
-    * On macOS Catalina, Big Sur & Monterey
-      * Select `Apple Inc. VirtIO Block Media` from the list and click **Erase**.
-    * On macOS Mojave and High Sierra
-      * Select `QEMU HARDDISK Media` (~103.08GB) from the list and click **Erase**.
-  *   Enter a `Name:` for the disk
+    *   Select `QEMU HARDDISK Media` (\~103.08GB) from the list
+            and click **Erase**.
+    *   Enter a `Name:` for the disk
       * If you are installing macOS Mojave or later (Catalina, Big Sur,
         and Monterey), choose any of the APFS options as the filesystem.
         MacOS Extended may not work.
-  *   Click **Erase**.
+  * Click **Erase**.
   * Click **Done**.
   * Close Disk Utility
 * From **macOS Utilities**
@@ -30,6 +28,30 @@ macOS `high-sierra`, `mojave`, `catalina`, `big-sur` and `monterey` are supporte
 * Complete the installation as you normally would.
   * On the first reboot use cursor keys and enter key to select **macOS Installer**
   * On the subsequent reboots use cursor keys and enter key to select the disk you named
+* Once you have finished installing macOS you will be presented with an the out-of-the-box first-start wizard to configure various options and set up your username and password
+*   OPTIONAL: After you have concluded the out-of-the-box wizard, you may want to enable the TRIM feature that the computer industry created for SSD disks. This feature in our macOS installation will allow QuickEmu to compact (shrink) your macOS disk image whenever you delete files inside the Virtual Machine. Without this step your macOS disk image will only ever get larger and will not shrink even when you delete lots of data inside macOS.
+    *   To enable TRIM, open the Terminal application and type the following command followed by pressing <kbd>enter</kbd> to tell macos to use the TRIM command on the hard disk when files are deleted:
+
+  ```bash
+  sudo trimforce enable
+  ```
+
+  You will be prompted to enter your account's password to gain the privilege needed. Once you've entered your password and pressed <kbd>enter</kbd> the command will request confirmation in the form of two questions that require you to type <kbd>y</kbd> (for a "yes" response) followed by <kbd>enter</kbd> to confirm. If you press <kbd>enter</kbd> without first typing <kbd>y</kbd> the system will consider that a negative response as though you said "no":
+
+  ```plain
+  IMPORTANT NOTICE: This tool force-enables TRIM for all relevant attached devices, even though such devices may not have been validated for data integrity while using TRIM. Use of this tool to enable TRIM may result in unintended data loss or data corruption. It should not be used in a commercial operating environment or with important data. Before using this tool, you should back up all of your data and regularly back up data while TRIM is enabled. This tool is provided on an "as is" basis. APPLE MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION THE IMPLIED WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, REGARDING THIS TOOL OR ITS USE ALONE OR IN COMBINATION WITH YOUR DEVICES, SYSTEMS, OR SERVICES. BY USING THIS TOOL TO ENABLE TRIM, YOU AGREE THAT, TO THE EXTENT PERMITTED BY APPLICABLE LAW, USE OF THE TOOL IS AT YOUR SOLE RISK AND THAT THE ENTIRE RISK AS TO SATISFACTORY QUALITY, PERFORMANCE, ACCURACY AND EFFORT IS WITH YOU.
+  Are you sure you with to proceed (y/N)?
+  ```
+
+  And a second confirmation once you've confirmed the previous one:
+
+  ```plain
+  Your system will immediately reboot when this is complete.
+  Is this OK (y/N)?
+  ```
+
+  As the last message states, your system will automatically reboot as soon as the command completes.
+
 
 The default macOS configuration looks like this:
 
@@ -59,7 +81,6 @@ There are some considerations when running macOS via Quickemu.
   bootloader and OVMF firmware from [OSX-KVM](https://github.com/kholia/OSX-KVM).
 * Optimised by default, but no GPU acceleration is available.
   * Host CPU vendor is detected and guest CPU is optimised accordingly.
-  * [VirtIO Block Media](https://www.kraxel.org/blog/2019/06/macos-qemu-guest/) is used for the system disk where supported.
   * [VirtIO `usb-tablet`](http://philjordan.eu/osx-virt/) is used for the mouse.
   * VirtIO Network (`virtio-net`) is supported and enabled on macOS Big Sur and newer but previous releases use `vmxnet3`.
   * VirtIO Memory Ballooning is supported and enabled on macOS Big Sur and newer but disabled for other support macOS releases.
