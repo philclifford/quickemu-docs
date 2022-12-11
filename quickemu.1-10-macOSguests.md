@@ -81,6 +81,8 @@ There are some considerations when running macOS via Quickemu.
   bootloader and OVMF firmware from [OSX-KVM](https://github.com/kholia/OSX-KVM).
 * Optimised by default, but no GPU acceleration is available.
   * Host CPU vendor is detected and guest CPU is optimised accordingly.
+  * [VirtIO Block Media](https://www.kraxel.org/blog/2019/06/macos-qemu-guest/) is
+        used for the system disk where supported.
   * [VirtIO `usb-tablet`](http://philjordan.eu/osx-virt/) is used for the mouse.
   * VirtIO Network (`virtio-net`) is supported and enabled on macOS Big Sur and newer but previous releases use `vmxnet3`.
   * VirtIO Memory Ballooning is supported and enabled on macOS Big Sur and newer but disabled for other support macOS releases.
