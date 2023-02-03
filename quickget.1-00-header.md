@@ -3,7 +3,7 @@ title: QUICKGET
 section: 1
 header: Quickget User Manual
 footer: quickget
-date: December 11, 2022
+date: February  3, 2023
 author: Martin Wimpress
 ---
 
