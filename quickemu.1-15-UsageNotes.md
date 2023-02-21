@@ -48,3 +48,8 @@ quickemu --vm vm.conf --screen 0
 The above uses the 2560x1440 screen to compute the size of the window, which
 Quickemu sizes to 2048x1152. Without the `--screen` option, Quickemu would have
 used the 1920x1080 monitor which results in a window size of 1664x936.
+
+The '--screenpct' is an optional interger value between 25 <= pct < 100
+which will override system default screen sizes. The VM size will be
+'pct' of the chosen screen. **If --fullscreen is chosen screen will be
+fullsize instead of being scaled down by --screenpct value.**
