@@ -15,6 +15,7 @@ macOS `high-sierra`, `mojave`, `catalina`, `big-sur` and `monterey` are supporte
 * From **macOS Utilities**
   * Click **Disk Utility** and **Continue**
     *   Select `QEMU HARDDISK Media` (\~103.08GB) from the list
+            (on Big Sur and above use `Apple Inc. VirtIO Block Device`)
             and click **Erase**.
     *   Enter a `Name:` for the disk
       * If you are installing macOS Mojave or later (Catalina, Big Sur,
