@@ -8,11 +8,11 @@ You can also pass optional parameters
 **--braille**
   : Enable braille support. Requires SDL.
 
-**--delete**
+**--delete-disk**
   : Delete the disk image.
 
 **--display**
-: Select display backend. 'sdl' (default), 'gtk', 'none' or 'spice'
+: Select display backend. 'sdl' (default), 'gtk', 'none', 'spice' or 'spice-app'
 
 **--fullscreen**
 : Starts VM in full screen mode (Ctl+Alt+f to exit)
