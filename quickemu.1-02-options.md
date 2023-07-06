@@ -14,6 +14,9 @@ You can also pass optional parameters
 **--display**
 : Select display backend. 'sdl' (default), 'gtk', 'none', 'spice' or 'spice-app'
 
+**--sound-card**
+: Select virtual audio emulation. 'intel-hda' (default), 'ac97' (solaris default), 'es1370', 'sb16' (freedos default) or 'none'
+
 **--fullscreen**
 : Starts VM in full screen mode (Ctl+Alt+f to exit)
 
