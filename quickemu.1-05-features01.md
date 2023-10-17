@@ -31,6 +31,5 @@ We have a Discord for this project:
 See this (old) video where I explain some of my motivations for creating
 Quickemu.
 
-<a href="https://youtu.be/AOTYWEgw0hI">
-  <img src="https://i3.ytimg.com/vi/AOTYWEgw0hI/maxresdefault.jpg" alt="Replace VirtualBox with Bash &amp; QEMU" width="480">
-</a>
+[![Replace VirtualBox with Bash &
+QEMU](https://img.youtube.com/vi/AOTYWEgw0hI/0.jpg)](https://www.youtube.com/watch?v=AOTYWEgw0hI)
