@@ -17,3 +17,17 @@ sudo add-apt-repository ppa:yannick-mauray/quickgui
 sudo apt update
 sudo apt install quickgui
 ```
+
+### qqX
+
+A TUI wrapper that offers users a lot of new features and may be happily installed alongside `quickgui`.
+
+* **[qqX](https://github.com/TuxVinyards/qqX)** by [Alex Genovese](https://github.com/TuxVinyards)
+
+    A full process & version controlled wrapping of both Quickemu & Quickget with extra features and wizards for advanced users, including
+
+  * Easy secondary & shared storage creation wizard
+
+  * Multiple snapshot management, including of shared disks.
+
+  * qcow2 repair & resize
