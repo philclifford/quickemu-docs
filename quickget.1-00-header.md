@@ -3,7 +3,7 @@ title: QUICKGET
 section: 1
 header: Quickget User Manual
 footer: quickget
-date: November 10, 2023
+date: November 11, 2023
 author: Martin Wimpress
 ---
 
@@ -26,6 +26,15 @@ quickget - download and prepare materials for building a quickemu VM
 
 **list | list_csv | list_json**
 : provide a csv list of all supported guest OSes, versions and variants.
+
+**```--show-iso-url``` | -s** {**os**} {**release**} [**edition**]
+: show ISO download URL
+
+**```--test-iso-url``` | -t** {**os**} {**release**} [**edition**]
+: test if ISO is available
+
+**```--open-distro-homepage``` | -o** {**os**}
+: open OS homepage in browser
 
 **[OS] [Release] [Edition]**
 : specify the OS and release (and optional edition)
