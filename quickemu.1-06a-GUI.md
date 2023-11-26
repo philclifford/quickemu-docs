@@ -18,16 +18,10 @@ sudo apt update
 sudo apt install quickgui
 ```
 
-### qqX
+### quickemu quickget X terminal project
 
-A TUI wrapper that offers users a lot of new features and may be happily installed alongside `quickgui`.
+From Nov 2023, there is also a multi option desktop integrated text interface, with lots of unique tools and utilities to help you make light work of installations, snapshots and disk management
 
-* **[qqX](https://github.com/TuxVinyards/qqX)** by [Alex Genovese](https://github.com/TuxVinyards)
+- **[qqX](https://github.com/TuxVinyards/qqX)**  is independently curated by [Alex Genovese](https://github.com/TuxVinyards)  (see the github pages)
 
-    A full process & version controlled wrapping of both Quickemu & Quickget with extra features and wizards for advanced users, including
-
-  * Easy secondary & shared storage creation wizard
-
-  * Multiple snapshot management, including of shared disks.
-
-  * qcow2 repair & resize
+![qqX-vmm](https://github.com/TuxVinyards/qqX/assets/3956806/18e5c495-8072-49a5-8b9c-e1302549efcf)
