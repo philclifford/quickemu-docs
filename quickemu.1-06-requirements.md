@@ -10,7 +10,7 @@
 * [LSB](https://wiki.linuxfoundation.org/lsb/start)
 * [procps](https://gitlab.com/procps-ng/procps)
 * [python3](https://www.python.org/)
-* [macrecovery](https://github.com/acidanthera/OpenCorePkg/tree/master/Utilities/macrecovery)
+* [chunkcheck](https://gist.github.com/MCJack123/943eaca762730ca4b7ae460b731b68e7)
 * [mkisofs](http://cdrtools.sourceforge.net/private/cdrecord.html)
 * [usbutils](https://github.com/gregkh/usbutils)
 * [util-linux](https://github.com/karelzak/util-linux)

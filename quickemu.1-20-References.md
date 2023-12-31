@@ -13,6 +13,7 @@ Useful reference that assisted the development of Quickemu.
   * <https://github.com/kholia/OSX-KVM>
   * <https://github.com/thenickdude/KVM-Opencore>
   * <https://github.com/acidanthera/OpenCorePkg/tree/master/Utilities/macrecovery>
+  * <https://gist.github.com/MCJack123/943eaca762730ca4b7ae460b731b68e7>
   * <https://www.kraxel.org/blog/2017/09/running-macos-as-guest-in-kvm/>
   * <https://www.nicksherlock.com/2017/10/passthrough-of-advanced-cpu-features-for-macos-high-sierra-guests/>
   * <http://philjordan.eu/osx-virt/>
