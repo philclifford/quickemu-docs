@@ -34,13 +34,13 @@ These examples may save a little typing
 Debian (and direct derivatives such as MX Linux):
 
 ```
-sudo apt install qemu bash coreutils ovmf grep jq lsb-base procps python3 genisoimage usbutils util-linux sed spice-client-gtk libtss2-tcti-swtpm0 wget xdg-user-dirs zsync unzip
+sudo apt install qemu bash coreutils ovmf grep jq lsb-base procps python3 genisoimage usbutils util-linux sed socat spice-client-gtk libtss2-tcti-swtpm0 wget xdg-user-dirs zsync unzip
 ```
 
 Fedora:
 
 ```
-sudo dnf install qemu bash coreutils edk2-tools grep jq lsb procps python3 genisoimage usbutils util-linux sed spice-gtk-tools swtpm wget xdg-user-dirs xrandr unzip
+sudo dnf install qemu bash coreutils edk2-tools grep jq lsb procps python3 genisoimage usbutils util-linux sed socat spice-gtk-tools swtpm wget xdg-user-dirs xrandr unzip
 ```
 
 MacOS:
