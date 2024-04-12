@@ -9,6 +9,14 @@ following command:
 ``` bash
 yay -Sy quickemu
 ```
+### Debian and derivatives
+
+A [.deb package is available for Debian and derivatives in this project's GitHub releases page](https://github.com/quickemu-project/quickemu/releases).
+Download the .deb and install it with `apt-get`.
+
+```bash
+sudo apt-get install ./quickemu_x.y.z-1_all.deb
+```
 
 ### Ubuntu hosts
 
@@ -27,30 +35,30 @@ sudo apt install quickemu
 
 To quickly try quickemu:
 
-```sh
+``` sh
 nix-shell -p quickemu
 ```
 
 To install via Nix profile:
 
-```sh
+``` sh
 nix-env -iA pkgs.quickemu
 ```
 
 To install via NixOS config:
 
-```nix
+``` nix
 # /etc/nixos/configuration.nix
 {pkgs, ...}: {
-   environment.systemPackages = with pkgs; 
-     quickemu 
+   environment.systemPackages = with pkgs;
+     quickemu
    };
 }
 ```
 
 To install via Flakes:
 
-```sh
+``` sh
 # TODO (flake users, please add an example!)
 ```
 

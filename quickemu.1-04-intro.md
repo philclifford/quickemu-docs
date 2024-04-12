@@ -12,12 +12,3 @@ and no elevated permissions are required to run the virtual machines.
 **Quickemu now also includes comprehensive support for [macOS](#macos-guests)
 and [Windows](#windows-guests)**.
 
-See this (old) video where I explain some of my motivations for creating
-Quickemu:
-
-<div align="center">
-
-[![Replace VirtualBox with Bash &
-QEMU](https://img.youtube.com/vi/AOTYWEgw0hI/0.jpg)](https://www.youtube.com/watch?v=AOTYWEgw0hI)
-
-</div>

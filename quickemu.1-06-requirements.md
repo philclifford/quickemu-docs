@@ -36,7 +36,7 @@ These examples may save a little typing:
 
 #### Install requirements on Debian hosts
 
-This also applies to direct derivatives, such as MX Linux:
+This also applies to derivatives:
 
 ```sh
 sudo apt install qemu bash coreutils ovmf grep jq lsb-base procps python3 genisoimage usbutils util-linux sed spice-client-gtk libtss2-tcti-swtpm0 wget xdg-user-dirs zsync unzip
@@ -50,7 +50,7 @@ sudo dnf install qemu bash coreutils edk2-tools grep jq lsb procps python3 genis
 
 #### Install requirements on macOS hosts
 
-This is a work in progress (see [issue 248](https://github.com/quickemu-project/quickemu/issues/248)
+This is a **work in progress** (see [issue 248](https://github.com/quickemu-project/quickemu/issues/248)
 for other steps and changes that may enable running on MacOS)
 
 ```sh
