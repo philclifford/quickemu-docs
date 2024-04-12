@@ -1,18 +1,23 @@
-
 ## Introduction
 
-Quickly create and run highly optimised desktop virtual machines for Linux,
-macOS and Windows; with just two commands. You decide what operating system you
-want to run and Quickemu will figure out the best way to do it for you. For
-example:
+**Quickemu** is a wrapper for the excellent [QEMU](https://www.qemu.org/) that attempts to
+automatically *"do the right thing"*, rather than expose exhaustive configuration options.
+You decide what operating system you want to run, and Quickemu will figure out the best
+way to do it for you.
 
-```bash
-quickget ubuntu-mate 22.04
-quickemu --vm ubuntu-mate-22.04.conf
-```
+The original objective of the project was to enable [quick testing of
+Linux distributions](#linux-guests) where the virtual machine configurations can be
+stored anywhere (such as external USB storage or your home directory)
+and no elevated permissions are required to run the virtual machines.
+**Quickemu now also includes comprehensive support for [macOS](#macos-guests)
+and [Windows](#windows-guests)**.
 
-The original objective of the project was to enable quick testing of Linux
-distributions where the virtual machine configurations can be stored anywhere,
-such as external USB storage or your home directory, and no elevated permissions
-are required to run the virtual machines. **Quickemu now also includes
-comprehensive support for macOS and Windows**.
+See this (old) video where I explain some of my motivations for creating
+Quickemu:
+
+<div align="center">
+
+[![Replace VirtualBox with Bash &
+QEMU](https://img.youtube.com/vi/AOTYWEgw0hI/0.jpg)](https://www.youtube.com/watch?v=AOTYWEgw0hI)
+
+</div>

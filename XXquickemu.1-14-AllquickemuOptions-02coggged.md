@@ -1,6 +1,5 @@
 
-
-# All the options
+## Configuration
 
 Here are the usage instructions:
 
@@ -17,3 +16,4 @@ cog.out(f"\n```\n{help}\n```\n")
 The output goes here
 
 <!-- [[[end]]] -->
+
