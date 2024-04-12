@@ -26,22 +26,22 @@ You can also pass optional parameters
 **--ignore-msrs-always**  
 : Configure KVM to always ignore unhandled machine-specific registers
 
-**--screen <screen>**  
+**--screen \<screen\>**  
 : Use specified screen to determine the window size.
 
-**--screenpct <percent>**  
+**--screenpct \<percent\>**  
 : Percent of fullscreen for VM if --fullscreen is not specified.
 
 **--shortcut**  
 : Create a desktop shortcut
 
-**--snapshot apply <tag>**  
+**--snapshot apply \<tag\>**  
 : Apply/restore a snapshot.
 
-**--snapshot create <tag>**  
+**--snapshot create \<tag\>**  
 : Create a snapshot.
 
-**--snapshot delete <tag>**  
+**--snapshot delete \<tag\>**  
 : Delete a snapshot.
 
 **--snapshot info**  
@@ -50,61 +50,61 @@ You can also pass optional parameters
 **--status-quo**  
 : Do not commit any changes to disk/snapshot.
 
-**--viewer <viewer>**  
+**--viewer \<viewer\>**  
 : Choose an alternative viewer. @Options: 'spicy' (default), 'remote-viewer', 'none'
 
-**--width <width>**  
+**--width \<width\>**  
 : Set VM screen width. Does nothing without --height
 
-**--height <height>**  
+**--height \<height\>**  
 : Set VM screen height. Does nothing without --width
 
-**--ssh-port <port>**  
+**--ssh-port \<port\>**  
 : Set ssh-port manually
 
-**--spice-port <port>**  
+**--spice-port \<port\>**  
 : Set spice-port manually
 
-**--public-dir <path>**  
+**--public-dir \<path\>**  
 : Expose share directory. @Options: '' (default: xdg-user-dir PUBLICSHARE), '<directory>', 'none'
 
-**--monitor <type>**  
+**--monitor \<type\>**  
 : Set monitor connection type. @Options: 'socket' (default), 'telnet', 'none'
 
-**--monitor-telnet-host <ip/host>**  
+**--monitor-telnet-host \<ip/host\>**  
 : Set telnet host for monitor. (default: 'localhost')
 
-**--monitor-telnet-port <port>**  
+**--monitor-telnet-port \<port\>**  
 : Set telnet port for monitor. (default: '4440')
 
-**--monitor-cmd <cmd>**  
+**--monitor-cmd \<cmd\>**  
 : Send command to monitor if available. (Example: system_powerdown)
 
-**--serial <type>**  
+**--serial \<type\>**  
 : Set serial connection type. @Options: 'socket' (default), 'telnet', 'none'
 
-**--serial-telnet-host <ip/host>**  
+**--serial-telnet-host \<ip/host\>**  
 : Set telnet host for serial. (default: 'localhost')
 
-**--serial-telnet-port <port>**  
+**--serial-telnet-port \<port\>**  
 : Set telnet port for serial. (default: '6660')
 
-**--keyboard <type>**  
+**--keyboard \<type\>**  
 : Set keyboard. @Options: 'usb' (default), 'ps2', 'virtio'
 
-**--keyboard_layout <layout>**  
+**--keyboard_layout \<layout\>**  
 : Set keyboard layout.
 
-**--mouse <type>**  
+**--mouse \<type\>**  
 : Set mouse. @Options: 'tablet' (default), 'ps2', 'usb', 'virtio'
 
-**--usb-controller <type>**  
+**--usb-controller \<type\>**  
 : Set usb-controller. @Options: 'ehci' (default), 'xhci', 'none'
 
-**--sound-card <type>**  
+**--sound-card \<type\>**  
 : Set sound card. @Options: 'intel-hda' (default), 'ac97', 'es1370', 'sb16', 'none'
 
-**--extra_args <arguments>**  
+**--extra_args \<arguments\>**  
 : Pass additional arguments to qemu
 
 **--version**  
