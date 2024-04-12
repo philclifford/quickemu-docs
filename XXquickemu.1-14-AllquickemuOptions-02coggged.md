@@ -16,4 +16,3 @@ cog.out(f"\n```\n{help}\n```\n")
 The output goes here
 
 <!-- [[[end]]] -->
-

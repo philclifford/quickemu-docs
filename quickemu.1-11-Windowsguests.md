@@ -12,18 +12,17 @@ installation or driver optimisation.
 
 `quickget` can also download [Windows 10 LTSC](https://www.microsoft.com/en-us/evalcenter/download-windows-10-enterprise) and Windows Server [2012-r2](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2012-r2), [2016](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2016), [2019](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2019), and [2022](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022). No automated installation is supported for these releases.
 
-
 ``` bash
 quickget windows 11
 quickemu --vm windows-11.conf
 ```
 
--   Complete the installation as you normally would.
--   All relevant drivers and services should be installed automatically.
--   A local administrator user account is automatically created, with
+- Complete the installation as you normally would.
+- All relevant drivers and services should be installed automatically.
+- A local administrator user account is automatically created, with
     these credentials:
-    -   Username: `Quickemu`
-    -   Password: `quickemu`
+    - Username: `Quickemu`
+    - Password: `quickemu`
 
 ### Regional versions
 
@@ -45,8 +44,7 @@ tpm="on"
 secureboot="off"
 ```
 
--   `guest_os="windows"` instructs `quickemu` to optimise for Windows.
--   `fixed_iso=` specifies the ISO image that provides VirtIO drivers.
--   `tpm="on"` instructs `quickemu` to create a software emulated TPM
+- `guest_os="windows"` instructs `quickemu` to optimise for Windows.
+- `fixed_iso=` specifies the ISO image that provides VirtIO drivers.
+- `tpm="on"` instructs `quickemu` to create a software emulated TPM
     device using `swtpm`.
-

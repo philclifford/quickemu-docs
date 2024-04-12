@@ -57,4 +57,3 @@ The '--screenpct' is an optional integer value between 25 \<= pct \< 100
 which will override system default screen sizes. The VM size will be
 'pct' of the chosen screen. **If --fullscreen is chosen screen will be
 fullsize instead of being scaled down by --screenpct value.**
-
