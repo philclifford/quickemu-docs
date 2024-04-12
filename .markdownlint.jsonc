@@ -1,0 +1,9 @@
+{
+  "default": false,
+  "no-hard-tabs": true,
+  "line-length": { "code_blocks": false  , "line_length": 80},
+  "blank_lines": true,
+  "blanks-around-fences": true,
+  "blanks-around-headings": true,
+  "whitespace": true
+}
