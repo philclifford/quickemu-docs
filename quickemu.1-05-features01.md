@@ -1,6 +1,6 @@
 ## Features
 
--   **macOS** Monterey, Big Sur, Catalina, Mojave & High Sierra
+-   **macOS** Sonoma, Ventura, Monterey, Big Sur, Catalina, Mojave & High Sierra
 -   **Windows** 10 and 11 including TPM 2.0
 -   [Ubuntu](https://ubuntu.com/desktop) and all the **[official Ubuntu
     flavours](https://ubuntu.com/download/flavours)**
