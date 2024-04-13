@@ -17,7 +17,7 @@ quickemu --vm ubuntu-mate-22.04.conf
 
 <img src=".github/screenshot.png" alt="Quickemu Screenshot" />
 
-**Made with 💝 for <img src=".github/tux.png" align="top" width="24" />.**
+**Made with 💝 for <img src=".github/tux.png" align="top" width="24" alt="Tux (Linux)"/>.**
 
 Quickemu is available in the repositories of the following distros
 (packaging status by [Repology.org](https://repology.org/)):

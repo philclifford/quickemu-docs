@@ -18,7 +18,7 @@ macOS and Windows.  It uses sensible defaults, but many configuration options ca
 in the required configuration file, which will as a minimum specify the path to the installation
 ISO and QEMU disk for the installed VM
 
-# OPTIONSs
+# OPTIONS
 
 These are the options and defaults for the \<vm\>.conf file
 
