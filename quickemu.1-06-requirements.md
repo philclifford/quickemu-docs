@@ -39,13 +39,13 @@ These examples may save a little typing:
 This also applies to derivatives:
 
 ```sh
-sudo apt install qemu bash coreutils ovmf grep jq lsb-base procps python3 genisoimage usbutils util-linux sed spice-client-gtk libtss2-tcti-swtpm0 wget xdg-user-dirs zsync unzip
+sudo apt install qemu bash coreutils ovmf grep jq lsb-base procps python3 genisoimage usbutils util-linux sed socat spice-client-gtk libtss2-tcti-swtpm0 wget xdg-user-dirs zsync unzip
 ```
 
 #### Install requirements on Fedora hosts
 
 ```sh
-sudo dnf install qemu bash coreutils edk2-tools grep jq lsb procps python3 genisoimage usbutils util-linux sed spice-gtk-tools swtpm wget xdg-user-dirs xrandr unzip
+sudo dnf install qemu bash coreutils edk2-tools grep jq lsb procps python3 genisoimage usbutils util-linux sed socat spice-gtk-tools swtpm wget xdg-user-dirs xrandr unzip
 ```
 
 #### Install requirements on macOS hosts
