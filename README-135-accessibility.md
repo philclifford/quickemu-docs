@@ -6,4 +6,3 @@ real or fake device.
 ``` bash
 quickemu --vm ubuntu-22.04.conf --braille --display sdl
 ```
-

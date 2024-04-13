@@ -2,7 +2,6 @@
 ## Configuration
 
 Here are the usage instructions:
-
 <!-- [[[cog
 import subprocess
 
@@ -16,4 +15,3 @@ cog.out(f"\n```\n{help}\n```\n")
 The output goes here
 
 <!-- [[[end]]] -->
-

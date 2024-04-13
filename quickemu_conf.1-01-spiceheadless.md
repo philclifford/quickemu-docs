@@ -4,9 +4,9 @@
 
 The following features are available while using the SPICE protocol:
 
--   Copy/paste between the guest and host
--   Host file sharing to the guest
--   USB device redirection
+- Copy/paste between the guest and host
+- Host file sharing to the guest
+- USB device redirection
 
 To use SPICE add `--display spice` to the Quickemu invocation, this
 requires that the `spicy` client is installed, available from the
@@ -44,5 +44,3 @@ it from the host as follows:
 ``` bash
 ssh -p 22220 your_vm_user@localhost
 ```
-
-
