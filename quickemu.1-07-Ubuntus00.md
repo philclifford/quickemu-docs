@@ -10,14 +10,14 @@ quickget ubuntu 22.04
 quickemu --vm ubuntu-22.04.conf
 ```
 
--   Complete the installation as normal.
--   Post-install:
-    -   Install the SPICE agent (`spice-vdagent`) in the guest to enable
+- Complete the installation as normal.
+- Post-install:
+    - Install the SPICE agent (`spice-vdagent`) in the guest to enable
         copy/paste and USB redirection
-        -   `sudo apt install spice-vdagent`
-    -   Install the SPICE WebDAV agent (`spice-webdavd`) in the guest to
+        - `sudo apt install spice-vdagent`
+    - Install the SPICE WebDAV agent (`spice-webdavd`) in the guest to
         enable file sharing.
-        -   `sudo apt install spice-webdavd`
+        - `sudo apt install spice-webdavd`
 
 ### Ubuntu daily-live images
 
@@ -32,4 +32,3 @@ quickemu --vm ubuntu-daily-live.conf
 You can run `quickget ubuntu daily-live` to refresh your daily development
 image as often as you like, it will even automatically switch to a new
 series.
-

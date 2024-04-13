@@ -9,6 +9,7 @@ following command:
 ``` bash
 yay -Sy quickemu
 ```
+
 ### Debian and derivatives
 
 A [.deb package is available for Debian and derivatives in this project's GitHub releases page](https://github.com/quickemu-project/quickemu/releases).
@@ -68,4 +69,3 @@ To install via Flakes:
 git clone --filter=blob:none https://github.com/wimpysworld/quickemu
 cd quickemu
 ```
-

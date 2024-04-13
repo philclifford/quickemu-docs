@@ -14,9 +14,11 @@ quickemu_conf - Options and parameters in the quickemu \<vm\>.conf
 # DESCRIPTION
 
 **quickemu** will create and run highly optimised desktop virtual machines for Linux,
-macOS and Windows.  It uses sensible defaults, but many configuration options can be overridden in the required configuration file, which will as a minimum specify the path to the installation ISO and QEMU disk for the installed VM
+macOS and Windows.  It uses sensible defaults, but many configuration options can be overridden
+in the required configuration file, which will as a minimum specify the path to the installation
+ISO and QEMU disk for the installed VM
 
-# OPTIONS
+# OPTIONSs
 
 These are the options and defaults for the \<vm\>.conf file
 
