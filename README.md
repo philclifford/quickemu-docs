@@ -1,4 +1,5 @@
 # quickemu-docs
+
 Build environment for Quickemu project documentation
 
 [![CodeFactor](https://www.codefactor.io/repository/github/philclifford/quickemu-docs/badge/main)](https://www.codefactor.io/repository/github/philclifford/quickemu-docs/overview/main)
@@ -10,7 +11,9 @@ It consists of a `Makefile` that calls a script (`build_manuals`) which generate
 and the contents of [../docs](../docs)
 
 It does this by using a set of parts according to the recipe build in and by the Makefile. To update the 3 manual pages, the markdown sources and
-the main project README.md edit or add to the parts, paying attention to ordering and inclusion of new parts in appropriate recipes, then run `make clean;make`.  This will generate parts of the documentation by running the software itself to ensure consistency and current alignment.
+the main project README.md edit or add to the parts, paying
+ attention to ordering and inclusion of new parts in appropriate recipes, then run `make clean;make`.  This
+ will generate parts of the documentation by running the software itself to ensure consistency and current alignment.
 The Makefile here can also be used (with sudo) to install the man pages and or the software.
 
 The parts list currently consists of:
@@ -57,7 +60,9 @@ The process requires
 
 ## Building the docs
 
-You will need this submodule checked out appropriately under a clone of the `quickemu` repo.  The build uses `../quickemu` for the most part, so will build docs based on the the position in this submodule but consistent with the version of software in the parent directory. `cog` updates are designed to happen within the parent repo (so they can happen in GitHub too ), so the Makefile will enforce a symlink to appear here pointing to `../quickemu`
+You will need this submodule checked out appropriately under a clone of the `quickemu` repo.  The build uses `../quickemu` for the most part, so will build docs
+based on the the position in this submodule but consistent with the version of software in the parent directory. `cog` updates are designed to happen within the
+parent repo (so they can happen in GitHub too ), so the Makefile will enforce a symlink to appear here pointing to `../quickemu`
 
 The general flow of the build is:
 
@@ -73,7 +78,9 @@ make
 
 This should result in a perfect and consistent set of markdown docs and `man` pages in `../docs/` and also the matching `../README.md`
 It is essential to check and preview the generated assets before
-committing them or installing them since mistakes are easy, helpful software sometimes is too helpful, and `pandoc`, `cog` and github markdown sometimes choose to fight rather than cooperate so small edits or patches may be needed to achieve satisfactory outcomes. (Currently this revolves around ensuring the `cog` commented sections and what follows are correctly situated and the terminating `cog` comment has not stepped over a code fence).
+committing them or installing them since mistakes are easy, helpful software sometimes is too helpful, and `pandoc`, `cog` and github markdown sometimes choose
+to fight rather than cooperate so small edits or patches may be needed to achieve satisfactory outcomes. (Currently this revolves around ensuring the
+`cog` commented sections and what follows are correctly situated and the terminating `cog` comment has not stepped over a code fence).
 
 Once satisfied, you can optionally `install` the `man` pages so generated (and even the versions of the executables ) with
 

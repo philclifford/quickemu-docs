@@ -26,13 +26,12 @@ install_docs: all
 	install -m 644 ../docs/quickemu.1 $(DESTDIR)$(mandir)/man1
 	install -m 644 ../docs/quickemu_conf.1 $(DESTDIR)$(mandir)/man1
 
-#   install -m 644 quickgui.1 $(DESTDIR)$(mandir)/man1
 
 install_bins:
 	install -d $(DESTDIR)$(bindir)
 	install -m 755 ../quickget $(DESTDIR)$(bindir)
 	install -m 755 ../quickemu $(DESTDIR)$(bindir)
-	install -m 755 ../macrecovery $(DESTDIR)$(bindir)
+	install -m 755 ../chunckcheck $(DESTDIR)$(bindir)
 
 install: install_bins  install_docs
 
@@ -43,6 +42,7 @@ uninstall::
 	rm -f $(DESTDIR)$(bindir)/quickget
 	rm -f $(DESTDIR)$(bindir)/quickemu
 	rm -f $(DESTDIR)$(bindir)/macrecovery
+	rm -f $(DESTDIR)$(bindir)/chunkcheck
 
 
 .PHONY: all
