@@ -5,7 +5,7 @@
 `quickget` will automatically download an Ubuntu release and create the
 virtual machine configuration.
 
-``` bash
+``` shell
 quickget ubuntu 22.04
 quickemu --vm ubuntu-22.04.conf
 ```
@@ -24,7 +24,7 @@ quickemu --vm ubuntu-22.04.conf
 `quickget` can also download/refresh daily-live images via `zsync` for Ubuntu
 developers and testers.
 
-``` bash
+``` shell
 quickget ubuntu daily-live
 quickemu --vm ubuntu-daily-live.conf
 ```

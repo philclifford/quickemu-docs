@@ -8,7 +8,7 @@
 
 </div>
 
-```bash
+``` shell
 quickget ubuntu-mate 22.04
 quickemu --vm ubuntu-mate-22.04.conf
 ```

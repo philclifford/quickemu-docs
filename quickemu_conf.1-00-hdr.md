@@ -3,7 +3,7 @@ title: QUICKEMU_CONF
 section: 1
 header: Quickemu Configuration Manual
 footer: quickemu_conf
-date: April 13, 2024
+date: April 14, 2024
 author: Martin Wimpress
 ---
 
@@ -22,7 +22,7 @@ ISO and QEMU disk for the installed VM
 
 These are the options and defaults for the \<vm\>.conf file
 
-```bash
+``` shell
 # Lowercase variables are used in the VM config file only
 boot="efi"
 cpu_cores=""
@@ -66,7 +66,7 @@ mouse="tablet"
 
 # EXAMPLES
 
-```bash
+``` shell
 guest_os="linux"
 disk_img="debian-bullseye/disk.qcow2"
 iso="debian-bullseye/firmware-11.0.0-amd64-DVD-1.iso"
@@ -74,7 +74,7 @@ iso="debian-bullseye/firmware-11.0.0-amd64-DVD-1.iso"
 
 The default macOS configuration looks like this:
 
-```bash
+``` shell
 guest_os="macos"
 img="macos-catalina/RecoveryImage.img"
 disk_img="macos-catalina/disk.qcow2"
@@ -88,7 +88,7 @@ macos_release="catalina"
 
 The default Windows 11 configuration looks like this:
 
-```bash
+``` shell
 guest_os="windows"
 disk_img="windows-11/disk.qcow2"
 iso="windows-11/Win11_EnglishInternational_x64.iso"

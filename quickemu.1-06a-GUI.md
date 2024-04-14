@@ -7,7 +7,7 @@ graphical user interface is also available:
 
 To install Quickgui on Ubuntu:
 
-```sh
+``` shell
 sudo add-apt-repository ppa:yannick-mauray/quickgui
 sudo apt update
 sudo apt install quickgui

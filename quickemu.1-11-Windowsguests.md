@@ -12,7 +12,7 @@ installation or driver optimisation.
 
 `quickget` can also download [Windows 10 LTSC](https://www.microsoft.com/en-us/evalcenter/download-windows-10-enterprise) and Windows Server [2012-r2](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2012-r2), [2016](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2016), [2019](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2019), and [2022](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022). No automated installation is supported for these releases.
 
-``` bash
+``` shell
 quickget windows 11
 quickemu --vm windows-11.conf
 ```
@@ -29,13 +29,13 @@ quickemu --vm windows-11.conf
 By default `quickget` will download the *"English International"* release (*"English (United States)"* for server releases),
 but you can optionally specify one of the supported languages: For example:
 
-``` bash
+``` shell
 quickget windows 11 "Chinese (Traditional)"
 ```
 
 The default Windows 11 configuration looks like this:
 
-``` bash
+``` shell
 guest_os="windows"
 disk_img="windows-11/disk.qcow2"
 iso="windows-11/windows-11.iso"
