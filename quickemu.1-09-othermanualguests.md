@@ -6,7 +6,7 @@ configuration.
 - Download a .iso image of a Linux distribution
 - Create a VM configuration file; for example `debian-bullseye.conf`
 
-``` bash
+``` shell
 guest_os="linux"
 disk_img="debian-bullseye/disk.qcow2"
 iso="debian-bullseye/firmware-11.0.0-amd64-DVD-1.iso"
@@ -14,7 +14,7 @@ iso="debian-bullseye/firmware-11.0.0-amd64-DVD-1.iso"
 
 - Use `quickemu` to start the virtual machine:
 
-``` bash
+``` shell
 quickemu --vm debian-bullseye.conf
 ```
 

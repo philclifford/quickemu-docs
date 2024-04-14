@@ -61,7 +61,7 @@ the guest.
 
 You can install the minimal Samba components on Ubuntu using:
 
-``` bash
+``` shell
 sudo apt install --no-install-recommends samba
 ```
 
@@ -155,7 +155,7 @@ Error setting facl: Operation not permitted
 
 Try setting [the following option](https://search.nixos.org/options?channel=23.11&show=virtualisation.spiceUSBRedirection.enable&from=0&size=50&sort=relevance&type=packages&query=spiceusbredirec):
 
-```nix
+``` nix
 virtualisation.spiceUSBRedirection.enable = true;
 ```
 

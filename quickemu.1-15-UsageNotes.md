@@ -4,7 +4,7 @@ Desktop shortcuts can be created for a VM, the shortcuts are saved in
 `~/.local/share/applications`. Here is an example of how to create a
 shortcut.
 
-``` bash
+``` shell
 quickemu --vm ubuntu-22.04-desktop.conf --shortcut
 ```
 
@@ -29,13 +29,13 @@ must match the resolution of the screen.
 
 To know which screen to use, type:
 
-``` bash
+``` shell
 xrandr --listmonitors | grep -v Monitors
 ```
 
 The command will output something like this:
 
-``` bash
+``` shell
  0: +*HDMI-0 2560/597x1440/336+1920+0  HDMI-0
  1: +DVI-D-0 1920/527x1080/296+0+0  DVI-D-0
 ```
@@ -44,7 +44,7 @@ The first number is what needs to be passed to the `--screen` option.
 
 For example:
 
-``` bash
+``` shell
 quickemu --vm vm.conf --screen 0
 ```
 

@@ -18,7 +18,7 @@ The Makefile here can also be used (with sudo) to install the man pages and or t
 
 The parts list currently consists of:
 
-```text
+``` text
 ##  Tops and tails
 quickemu.1-01-head.md
 quickemu_conf.1-00-hdr.md
@@ -66,7 +66,7 @@ parent repo (so they can happen in GitHub too ), so the Makefile will enforce a 
 
 The general flow of the build is:
 
-```
+``` shell
 
 # in the `quickemu` clone
 git pull # or checkout <branch> ...
@@ -82,6 +82,25 @@ committing them or installing them since mistakes are easy, helpful software som
 to fight rather than cooperate so small edits or patches may be needed to achieve satisfactory outcomes. (Currently this revolves around ensuring the
 `cog` commented sections and what follows are correctly situated and the terminating `cog` comment has not stepped over a code fence).
 
+My workflow currently uses the following patch in the parent project directory after regeneration:
+
+``` patch
+diff --git a/README.md b/README.md
+index 036c393..d89f8a9 100644
+--- a/README.md
++++ b/README.md
+@@ -788,7 +788,7 @@ You can also pass optional parameters
+ 
+ ```
+ <!-- [[[end]]] -->
+-```
++
+ ## Desktop shortcuts
+ 
+ Desktop shortcuts can be created for a VM, the shortcuts are saved in
+```
+
+
 Once satisfied, you can optionally `install` the `man` pages so generated (and even the versions of the executables ) with
 
 `sudo make  install_{docs|bins}`
@@ -90,7 +109,7 @@ or
 
 and/or if the parent is checked out on a branch for submiting or updating a PR upstream, then
 
-```
+``` shell
 cd ..
 git add README.md docs/*
 git commit

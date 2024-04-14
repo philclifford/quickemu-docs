@@ -3,7 +3,7 @@
 `quickget` automatically downloads a macOS recovery image and creates a
 virtual machine configuration.
 
-``` bash
+``` shell
 quickget macos catalina
 quickemu --vm macos-catalina.conf
 ```
@@ -45,7 +45,7 @@ macOS `high-sierra`, `mojave`, `catalina`, `big-sur`, `monterey`, `ventura` and
         following command followed by pressing
         command on the hard disk when files are deleted:
 
-``` bash
+``` shell
 sudo trimforce enable
 ```
 
@@ -71,7 +71,7 @@ soon as the command completes.
 
 The default macOS configuration looks like this:
 
-``` bash
+``` shell
 guest_os="macos"
 img="macos-catalina/RecoveryImage.img"
 disk_img="macos-catalina/disk.qcow2"
@@ -139,7 +139,7 @@ If the wired ethernet device is not `en0`, then then go to *System
 Preferences* -\> *Network*, delete all the network devices and apply the
 changes. Next, open a terminal and run the following:
 
-``` bash
+``` shell
 sudo rm /Library/Preferences/SystemConfiguration/NetworkInterfaces.plist
 ```
 
