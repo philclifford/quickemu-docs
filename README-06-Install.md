@@ -66,6 +66,6 @@ To install via Flakes:
 ### Other Linux hosts (installing from source)
 
 ``` shell
-git clone --filter=blob:none https://github.com/wimpysworld/quickemu
+git clone --filter=blob:none https://github.com/quickemu-project/quickemu
 cd quickemu
 ```
