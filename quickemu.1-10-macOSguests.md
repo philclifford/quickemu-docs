@@ -43,7 +43,7 @@ macOS `high-sierra`, `mojave`, `catalina`, `big-sur`, `monterey`, `ventura` and
     when you delete lots of data inside macOS.
     - To enable TRIM, open the Terminal application and type the
         following command followed by pressing
-        command on the hard disk when files are deleted:
+        <kbd>enter</kbd> to tell macos to use the TRIM command on the hard disk when files are deleted:
 
 ``` shell
 sudo trimforce enable
@@ -51,7 +51,8 @@ sudo trimforce enable
 
 You will be prompted to enter your account's password to gain the
 privilege needed. Once you've entered your password and pressed
-in the form of two questions that require you to type
+in the form of two questions that require you to type <kbd>y</kbd> (for a yes response) followed by <kbd>enter</kbd> to confirm.
+If you press <kbd>enter</kbd> without first typing <kbd>y</kbd> the system will consider that a negative
 response as though you said "no":
 
 ``` plain
