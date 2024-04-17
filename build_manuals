@@ -21,7 +21,7 @@ sed  -i "s/^date: .*/date: $(date +'%B %e, %Y')/"  \
     quickget.1-00-header.md
 
 
-pandoc -s $(cat README.lst)  -f markdown -t markdown  | sed 's/`<kbd>`{=html}/<kbd>/; s/`<\/kbd>`{=html}/<\/kbd>/' > README_main.md
+pandoc -s $(cat README.lst)  -f markdown -t markdown  | sed 's/`<kbd>`{=html}/<kbd>/; s/`<\/kbd>`{=html}/<\/kbd>/; s/```{=html}//' > README_main.md
 #
 cat README-00-hdr.md README_main.md >../README.md
 ( cd .. ; cog -r README.md )
@@ -33,9 +33,9 @@ ln -sf ../quickemu .
 
 cog -e -d XXquickemu.1-14-AllquickemuOptions-02coggged.md > quickemu.1-14-AllquickemuOptions-02coggged.md
 
-pandoc -s $(cat quickemu_conf.lst)  -f markdown -t markdown  -o  ../docs/quickemu_conf.1.md
-pandoc -s $(cat quickemu.lst)  -f markdown -t markdown -o ../docs/quickemu.1.md
-pandoc -s $(cat quickget.lst)  -f markdown -t markdown -o ../docs/quickget.1.md
+pandoc -s $(cat quickemu_conf.lst)  -f markdown -t markdown  | sed 's/`<kbd>`{=html}/<kbd>/; s/`<\/kbd>`{=html}/<\/kbd>/; s/```{=html}//' >  ../docs/quickemu_conf.1.md
+pandoc -s $(cat quickemu.lst)  -f markdown -t markdown | sed 's/`<kbd>`{=html}/<kbd>/; s/`<\/kbd>`{=html}/<\/kbd>/; s/```{=html}//' > ../docs/quickemu.1.md
+pandoc -s $(cat quickget.lst)  -f markdown -t markdown | sed 's/`<kbd>`{=html}/<kbd>/; s/`<\/kbd>`{=html}/<\/kbd>/; s/```{=html}//' > ../docs/quickget.1.md
 #
 pandoc -s ../docs/quickemu.1.md  -f markdown -t man -o ../docs/quickemu.1
 pandoc -s ../docs/quickget.1.md   -f markdown -t man -o ../docs/quickget.1
