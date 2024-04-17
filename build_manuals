@@ -21,7 +21,7 @@ sed  -i "s/^date: .*/date: $(date +'%B %e, %Y')/"  \
     quickget.1-00-header.md
 
 
-pandoc -s $(cat README.lst)  -f markdown -t markdown  > README_main.md
+pandoc -s $(cat README.lst)  -f markdown -t markdown  | sed 's/`<kbd>`{=html}/<kbd>/; s/`<\/kbd>`{=html}/<\/kbd>/' > README_main.md
 #
 cat README-00-hdr.md README_main.md >../README.md
 ( cd .. ; cog -r README.md )
