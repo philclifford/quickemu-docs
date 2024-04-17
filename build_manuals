@@ -21,9 +21,7 @@ sed  -i "s/^date: .*/date: $(date +'%B %e, %Y')/"  \
     quickget.1-00-header.md
 
 
-# We can keep the cog in the README but we
-# have to remove the damage pandoc inflicts on cog sections
-pandoc -s $(cat README.lst)  -f markdown -t markdown | grep -v '{=html}' > README_main.md
+pandoc -s $(cat README.lst)  -f markdown -t markdown  > README_main.md
 #
 cat README-00-hdr.md README_main.md >../README.md
 ( cd .. ; cog -r README.md )
