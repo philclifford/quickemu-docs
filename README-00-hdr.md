@@ -26,7 +26,7 @@ Quickemu is available in the repositories of the following distros
 <tbody>
 <tr valign="top">
 <td>
-  
+
 [![Packaging
 status of quickemu](https://repology.org/badge/vertical-allrepos/quickemu.svg?header=quickemu)](https://repology.org/project/quickemu/versions)
 
@@ -35,7 +35,7 @@ status of quickemu](https://repology.org/badge/vertical-allrepos/quickemu.svg?he
 
 [![Packaging
 status](https://repology.org/badge/vertical-allrepos/quickgui.svg?header=quickgui)](https://repology.org/project/quickgui/versions)
-  
+
 </td>
 </tr>
 </tbody>
