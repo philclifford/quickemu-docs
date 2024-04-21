@@ -1,7 +1,7 @@
 #!/bin/sh
 
 
-cp XXquickemu.1-14-AllquickemuOptions-02coggged.md  quickemu.1-14-AllquickemuOptions-02coggged.md
+# cp XXquickemu.1-14-AllquickemuOptions-02coggged.md  quickemu.1-14-AllquickemuOptions-02coggged.md
 
 ../quickget list_csv | awk -F"," '{print "* `" $2 "` ("$1")" }' |grep  -e buntu |sort -u  >quickemu.1-07-Ubuntus02-generated.md
 ../quickget list_csv | awk -F"," '{print "* `" $2 "` ("$1")" }' |grep -v -e 'Display Name' -e windows -e  macos -e buntu |sort -u >quickemu.1-08-OtherOperatingSystems02-generated.md
@@ -20,6 +20,12 @@ sed  -i "s/^date: .*/date: $(date +'%B %e, %Y')/"  \
     quickemu_conf.1-00-hdr.md \
     quickget.1-00-header.md
 
+## strip the cog for docs and manuals
+#cog has to run using the right quickemu
+ln -sf ../quickemu ../quickget .
+
+cog -e -d -o quickemu.1-08-OtherOperatingSystems01.md XXquickemu.1-08-OtherOperatingSystems01.md
+cog -e -d -o quickemu.1-14-AllquickemuOptions-02coggged.md XXquickemu.1-14-AllquickemuOptions-02coggged.md 
 
 pandoc -s $(cat README.lst)  -f markdown -t markdown  | sed 's/`<kbd>`{=html}/<kbd>/; s/`<\/kbd>`{=html}/<\/kbd>/; s/```{=html}//' > README_main.md
 #
@@ -27,11 +33,7 @@ cat README-00-hdr.md README_main.md >../README.md
 ( cd .. ; cog -r README.md )
 
 
-## strip the cog for docs and manuals
-#cog has to run using the right quickemu
-ln -sf ../quickemu .
 
-cog -e -d XXquickemu.1-14-AllquickemuOptions-02coggged.md > quickemu.1-14-AllquickemuOptions-02coggged.md
 
 pandoc -s $(cat quickemu_conf.lst)  -f markdown -t markdown  | sed 's/`<kbd>`{=html}/<kbd>/; s/`<\/kbd>`{=html}/<\/kbd>/; s/```{=html}//' >  ../docs/quickemu_conf.1.md
 pandoc -s $(cat quickemu.lst)  -f markdown -t markdown | sed 's/`<kbd>`{=html}/<kbd>/; s/`<\/kbd>`{=html}/<\/kbd>/; s/```{=html}//' > ../docs/quickemu.1.md
