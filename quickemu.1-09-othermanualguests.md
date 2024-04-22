@@ -1,4 +1,4 @@
-### Custom Linux guests
+### [Custom Linux guests](https://github.com/quickemu-project/quickemu/wiki/02-Create-Linux-virtual-machines#manually-create-linux-guests)
 
 Or you can download a Linux image and manually create a VM
 configuration.

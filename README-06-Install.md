@@ -1,6 +1,7 @@
-## Installation
+## [Installation](https://github.com/quickemu-project/quickemu/wiki/01-Installation)
 
-### Arch Linux hosts
+
+### [Arch Linux hosts](https://github.com/quickemu-project/quickemu/wiki/01-Installation#arch-linux)
 
 Quickemu is available from the AUR (Arch user repository), and can be
 installed via any AUR helper. Assuming your AUR helper is yay, Run the
@@ -10,16 +11,16 @@ following command:
 yay -Sy quickemu
 ```
 
-### Debian and derivatives
+### [Debian and derivatives](https://github.com/quickemu-project/quickemu/wiki/01-Installation#debian-and-derivatives)
 
-A [.deb package is available for Debian and derivatives in this project's GitHub releases page](https://github.com/quickemu-project/quickemu/releases).
+A [.deb package](https://github.com/quickemu-project/quickemu/releases) is available for Debian and derivatives in this project's GitHub releases page.
 Download the .deb and install it with `apt-get`.
 
 ``` shell
 sudo apt-get install ./quickemu_x.y.z-1_all.deb
 ```
 
-### Ubuntu hosts
+### [Ubuntu hosts](https://github.com/quickemu-project/quickemu/wiki/01-Installation#ubuntu)
 
 Quickemu is available from a PPA for Ubuntu users. The Quickemu PPA also
 includes a back port of QEMU 6.0.0 for 20.04 (Focal) and 21.04
@@ -32,7 +33,7 @@ sudo apt update
 sudo apt install quickemu
 ```
 
-### NixOS hosts
+### [NixOS hosts](https://github.com/quickemu-project/quickemu/wiki/01-Installation#nixos-hosts)
 
 To quickly try quickemu:
 
@@ -63,9 +64,11 @@ To install via Flakes:
 # TODO (flake users, please add an example!)
 ```
 
-### Other Linux hosts (installing from source)
+### [Other Linux hosts (installing from source)](https://github.com/quickemu-project/quickemu/wiki/01-Installation#any-linux-installing-from-source)
 
 ``` shell
 git clone --filter=blob:none https://github.com/quickemu-project/quickemu
 cd quickemu
+# optionally
+sudo make install
 ```

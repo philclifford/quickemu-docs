@@ -1,4 +1,4 @@
-## Creating macOS Guests 🍏
+## [Creating macOS Guests](https://github.com/quickemu-project/quickemu/wiki/03-Create-macOS-virtual-machines#automatically-create-macos-guests) 🍏
 
 `quickget` automatically downloads a macOS recovery image and creates a
 virtual machine configuration.

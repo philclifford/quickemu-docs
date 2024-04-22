@@ -1,4 +1,4 @@
-## Creating Windows guests 🪟
+## [Creating Windows guests](https://github.com/quickemu-project/quickemu/wiki/04-Create-Windows-virtual-machines) 🪟
 
 `quickget` can download
 [**Windows 10**](https://www.microsoft.com/software-download/windows10) and

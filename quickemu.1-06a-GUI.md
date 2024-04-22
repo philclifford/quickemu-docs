@@ -1,4 +1,6 @@
-## GUI (quickgui)
+## [Alternative Frontends](https://github.com/quickemu-project/quickemu/wiki/07-Alternative-frontends)
+
+### Quickgui
 
 While `quickemu` and `quickget` are designed for the terminal, a
 graphical user interface is also available:
@@ -17,10 +19,10 @@ Many thanks to [Luke Wesley-Holley](https://github.com/Lukewh) and
 [Philipp Kiemle](https://github.com/daPhipz) for creating the
 **[Quickemu icons](https://github.com/Lukewh/quickemu-icons)** 🎨
 
-## TUI (qqx)
+### qqX
 
-From Nov 2023, there is also a multi option desktop integrated text
-interface, the **quickemu quickget X terminal project**, a.k.a. **qqX**,
+There is also a multi option desktop integrated text
+interface, the **quickemu quickget X terminal project**, or **qqX**,
 with lots of unique tools and utilities to help you make
 light work of installations, snapshots and disk management
 
