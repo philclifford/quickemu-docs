@@ -24,27 +24,4 @@ quickemu --vm windows-11.conf
     - Username: `Quickemu`
     - Password: `quickemu`
 
-### Regional versions
-
-By default `quickget` will download the *"English International"* release (*"English (United States)"* for server releases),
-but you can optionally specify one of the supported languages: For example:
-
-``` shell
-quickget windows 11 "Chinese (Traditional)"
-```
-
-The default Windows 11 configuration looks like this:
-
-``` shell
-guest_os="windows"
-disk_img="windows-11/disk.qcow2"
-iso="windows-11/windows-11.iso"
-fixed_iso="windows-11/virtio-win.iso"
-tpm="on"
-secureboot="off"
-```
-
-- `guest_os="windows"` instructs `quickemu` to optimise for Windows.
-- `fixed_iso=` specifies the ISO image that provides VirtIO drivers.
-- `tpm="on"` instructs `quickemu` to create a software emulated TPM
-    device using `swtpm`.
+Further information is available from the project [wiki](https://github.com/quickemu-project/quickemu/wiki/04-Create-Windows-virtual-machines)
