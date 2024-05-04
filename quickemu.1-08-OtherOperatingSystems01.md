@@ -2,19 +2,17 @@ You can also use `quickget` with advanced options :
 
 
 ``` text
- -[12345]              <os>           : Show info* about OS
- --download       (-d) <os> <re> [ed] : Download the ISO only; no VM configuration
- --create-config (-cc) <os> [path/url]: Create default VM config for image
- --open-homepage  (-o) <os>           : Open homepage for the OS
- --version        (-v)                : Show version
- --help           (-h)                : Show this help message
- --url            (-u) <os> <re> [ed] : Show download URL for an OS release/edition
- --url-all       (-ua) <os>           : Show all download URLs for an OS
- --check          (-c) <os> [re] [ed] : Check download an OS release/edition is available
- --check-all     (-ca) <os>           : Check all downloads for an OS are available
- --list           (-l)                : List all supported systems in plain text
- --list-csv      (-lc)                : List all supported systems in csv format
- --list-json     (-lj)                : List all supported systems in json format
+  -[12345]              <os>           : Show info* about OS
+  --download       (-d) <os> <re> [ed] : Download image; no VM configuration
+  --create-config (-cc) <os> [path/url]: Create default VM config for image
+  --open-homepage  (-o) <os>           : Open homepage for the OS
+  --version        (-v)                : Show version
+  --help           (-h)                : Show this help message
+  --url            (-u) [os] [re] [ed] : Show image URL(s)
+  --check          (-c) [os] [re] [ed] : Check image URL(s)
+  --list           (-l)                : List all supported systems
+  --list-csv      (-lc)                : List everything in csv format
+  --list-json     (-lj)                : List everything in json format
 
 ```
 

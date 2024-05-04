@@ -9,8 +9,10 @@
 echo quickemu.1-* > quickemu.lst
 echo quickget.1-00-header.md quickemu.1-0[7-9]* quickemu.1-1[0-3]* quickget.1-09-footer.md > quickget.lst
 
-echo quickemu.1-0[4-5]* README-06-Install.md quickemu.1-0[6-9]* \
-quickemu.1-1[0-3]* quickemu_conf.1-01-spiceheadless.md README-135-accessibility.md README-135-confoptions.md quickemu.1-1[4-9]* quickemu.1-2* > README.lst
+## Significantly reduces weight in Readme
+# echo quickemu.1-0[4-5]* README-06-Install.md quickemu.1-0[6-9]* \
+# quickemu.1-1[0-3]* quickemu_conf.1-01-spiceheadless.md README-135-accessibility.md README-135-confoptions.md quickemu.1-1[4-9]* quickemu.1-2*
+echo README-0[1-5]* > README.lst
 #
 echo quickemu_conf.1-00-hdr.md  README-135-confoptions.md quickemu_conf.1-05-footer.md > quickemu_conf.lst
 # update date front-matter
@@ -27,10 +29,11 @@ ln -sf ../quickemu ../quickget .
 cog -e -d -o quickemu.1-08-OtherOperatingSystems01.md XXquickemu.1-08-OtherOperatingSystems01.md
 cog -e -d -o quickemu.1-14-AllquickemuOptions-02coggged.md XXquickemu.1-14-AllquickemuOptions-02coggged.md 
 
-pandoc -s $(cat README.lst)  -f markdown -t markdown  | sed 's/`<kbd>`{=html}/<kbd>/; s/`<\/kbd>`{=html}/<\/kbd>/; s/```{=html}//' > README_main.md
+pandoc -s $(cat README.lst)  -f markdown -t markdown  > README_main.md
+#| sed 's/`<kbd>`{=html}/<kbd>/; s/`<\/kbd>`{=html}/<\/kbd>/; s/```{=html}//' > README_main.md
 #
 cat README-00-hdr.md README_main.md >../README.md
-( cd .. ; cog -r README.md )
+# ( cd .. ; cog -r README.md )
 
 
 
