@@ -8,7 +8,6 @@ When installing from source, you will need to install the following requirements
 - [EDK II](https://github.com/tianocore/edk2)
 - [grep](https://www.gnu.org/software/grep/)
 - [jq](https://stedolan.github.io/jq/)
-- [LSB](https://wiki.linuxfoundation.org/lsb/start)
 - [procps](https://gitlab.com/procps-ng/procps)
 - [python3](https://www.python.org/)
 - [chunkcheck](https://gist.github.com/MCJack123/943eaca762730ca4b7ae460b731b68e7)
@@ -39,13 +38,13 @@ These examples may save a little typing:
 This also applies to derivatives:
 
 ``` shell
-sudo apt install qemu bash coreutils curl ovmf grep jq lsb-base procps python3 genisoimage usbutils util-linux sed socat spice-client-gtk libtss2-tcti-swtpm0 xdg-user-dirs zsync unzip
+sudo apt install qemu bash coreutils curl ovmf grep jq procps python3 genisoimage usbutils util-linux sed socat spice-client-gtk libtss2-tcti-swtpm0 xdg-user-dirs zsync unzip
 ```
 
 #### Install requirements on Fedora hosts
 
 ``` shell
-sudo dnf install qemu bash coreutils curl edk2-tools grep jq lsb procps python3 genisoimage usbutils util-linux sed socat spice-gtk-tools swtpm xdg-user-dirs xrandr unzip
+sudo dnf install qemu bash coreutils curl edk2-tools grep jq procps python3 genisoimage usbutils util-linux sed socat spice-gtk-tools swtpm xdg-user-dirs xrandr unzip
 ```
 
 #### Install requirements on macOS hosts

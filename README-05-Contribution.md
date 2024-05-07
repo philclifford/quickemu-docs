@@ -6,4 +6,5 @@ We welcome contributions to Quickemu.
 - Improve the documentation in [this README](https://github.com/quickemu-project/quickemu/edit/master/README.md) and the [Quickemu Wiki](https://github.com/quickemu-project/quickemu/wiki) 📖
 - File bug reports and feature requests in the [Quickemu Issues](https://github.com/quickemu-project/quickemu/issues) 📁
 - Submit [Quickemu Pull requests](https://github.com/quickemu-project/quickemu/pulls) to fix bugs 🐞 or add new features ✨
+  - Commit messages must [conform to the Conventional Commits specification](https://www.conventionalcommits.org/).
 - [Sponsor the project](https://github.com/sponsors/flexiondotorg) 💖
