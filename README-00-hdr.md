@@ -5,7 +5,7 @@
 
 **Quickly create and run optimised Windows, macOS and Linux virtual machines:**
 
-<div align="center"><script src="https://asciinema.org/a/658148.js" id="asciicast-658148" async="true"></script></div>
+<img src=".github/screenshot.png" alt="Quickemu Screenshot" />
 
 **Made with 💝 for <img src=".github/tux.png" align="top" width="24" alt="Tux (Linux)"/>**
 
