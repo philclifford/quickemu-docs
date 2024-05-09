@@ -13,4 +13,7 @@ quickget nixos unstable
 ```shell
 quickemu --vm nixos-unstable.conf
 ```
-- Execute `quickget` (with no arguments) to see a list of all the supported operating systems.
+
+## Demo
+
+<div align="center"><a href="https://asciinema.org/a/658148?autoplay=1" target="_blank"><img src="https://asciinema.org/a/658148.svg" /></a></div>

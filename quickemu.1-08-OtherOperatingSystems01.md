@@ -2,17 +2,17 @@ You can also use `quickget` with advanced options :
 
 
 ``` text
-  -[12345]              <os>           : Show info* about OS
-  --download       (-d) <os> <re> [ed] : Download image; no VM configuration
-  --create-config (-cc) <os> [path/url]: Create default VM config for image
-  --open-homepage  (-o) <os>           : Open homepage for the OS
-  --version        (-v)                : Show version
-  --help           (-h)                : Show this help message
-  --url            (-u) [os] [re] [ed] : Show image URL(s)
-  --check          (-c) [os] [re] [ed] : Check image URL(s)
-  --list           (-l)                : List all supported systems
-  --list-csv      (-lc)                : List everything in csv format
-  --list-json     (-lj)                : List everything in json format
+  --download      <os> <release> [edition] : Download image; no VM configuration
+  --create-config <os> [path/url]          : Create VM config for a OS image
+  --open-homepage <os>                     : Open homepage for the OS
+  --show          [os]                     : Show OS information
+  --version                                : Show version
+  --help                                   : Show this help message
+  --url           [os] [release] [edition] : Show image URL(s)
+  --check         [os] [release] [edition] : Check image URL(s)
+  --list                                   : List all supported systems
+  --list-csv                               : List everything in csv format
+  --list-json                              : List everything in json format
 
 ```
 

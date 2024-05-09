@@ -1,7 +1,8 @@
 # Features
 
-- **macOS** Sonoma, Ventura, Monterey, Big Sur, Catalina, Mojave & High Sierra
+- **macOS** Sonoma, Ventura, Monterey, Big Sur, Catalina & Mojave
 - **Windows** 10 and 11 including TPM 2.0
+- **Windows Server** 2022 2019 2016 2012-r2
 - [Ubuntu](https://ubuntu.com/desktop) and all the **[official Ubuntu
     flavours](https://ubuntu.com/download/flavours)**
 - **Nearly 1000 operating system editions are supported!**
@@ -21,4 +22,3 @@
 - Full duplex audio
 - Braille support
 - EFI (with or without SecureBoot) and Legacy BIOS boot
-- Graphical user interfaces available
