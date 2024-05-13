@@ -5,7 +5,7 @@
 While `quickemu` and `quickget` are designed for the terminal, a
 graphical user interface is also available:
 
-- **[Quickgui](https://github.com/quickgui/quickgui)** by [Mark Johnson](https://github.com/marxjohnson) and [Yannick Mauray](https://github.com/ymauray).
+- **[Quickgui](https://github.com/quickemu-project/quickgui)** by [Mark Johnson](https://github.com/marxjohnson) and [Yannick Mauray](https://github.com/ymauray).
 
 To install Quickgui on Ubuntu:
 
