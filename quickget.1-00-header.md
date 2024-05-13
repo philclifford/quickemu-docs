@@ -3,7 +3,7 @@ title: QUICKGET
 section: 1
 header: Quickget User Manual
 footer: quickget
-date: May  9, 2024
+date: May 13, 2024
 author: Martin Wimpress
 ---
 
@@ -21,23 +21,41 @@ quickget - download and prepare materials for building a quickemu VM
 
 # OPTIONS
 
-**version | -version | --version**
-: show version (from Quickemu)
-
-**list | list_csv | list_json**
-: provide a csv list of all supported guest OSes, versions and variants.
-
-**```--show-iso-url``` | -s** {**os**} {**release**} [**edition**]
-: show ISO download URL
-
-**```--test-iso-url``` | -t** {**os**} {**release**} [**edition**]
-: test if ISO is available
-
-**```--open-distro-homepage``` | -o** {**os**}
-: open OS homepage in browser
-
 **[OS] [Release] [Edition]**
 : specify the OS and release (and optional edition)
 if insufficient input is provided a list of missing options will be reported and the script will exit.  Editions may not apply and will be defaulted if not provided.
+
+**\-\-download** <os> <release> [edition]
+: Download image; no VM configuration
+
+**\-\-create-config** <os> [path/url]
+: Create VM config for a OS image
+
+**\-\-open-homepage** <os>
+: Open homepage for the OS
+
+**\-\-show** [os]
+: Show OS information
+
+**\-\-url** [os] [release] [edition]
+: Show image URL(s)
+
+**\-\-check** [os] [release] [edition]
+: Check image URL(s)
+
+**\-\-list**
+: List all supported systems
+
+**\-\-list-csv**
+: List everything in csv format
+
+**\-\-list-json**
+: List everything in json format
+
+**\-\-version**
+: Show version
+
+**\-\-help**
+: Show this help message
 
 # NOTES
