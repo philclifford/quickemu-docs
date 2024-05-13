@@ -24,3 +24,8 @@ quickemu --vm debian-bullseye.conf
         copy/paste and USB redirection.
     - Install the SPICE WebDAV agent (`spice-webdavd`) in the guest to
         enable file sharing.
+
+## Supporting old Linux distros
+
+If you want to run an old Linux , from 2016 or earlier, change the `guest_os` to `linux_old`.
+This will enable the `vmware-svga` graphics driver which is better supported on older distros.
