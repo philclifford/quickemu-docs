@@ -15,7 +15,7 @@ You can also pass optional parameters
   : Delete the disk image and EFI variables
 
 **\-\-delete-vm**  
-  : Delete the entire VM and it's configuration
+  : Delete the entire VM and its configuration
 
 **\-\-display**  
   : Select display backend. 'sdl' (default), 'gtk', 'none', 'spice' or 'spice-app'
