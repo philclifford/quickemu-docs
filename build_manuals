@@ -31,7 +31,7 @@ cog -e -d -o quickemu.1-14-AllquickemuOptions-02coggged.md XXquickemu.1-14-Allqu
 
 #pandoc options to match wimpy's markdown style preferences
 
-pandoc --wrap=preserve --columns=120 -s $(cat README.lst)  -f markdown -t gfm  > README_main.md
+pandoc --wrap=preserve --columns=120 -s $(cat README.lst)  -f markdown-smart -t gfm  > README_main.md
 #| sed 's/`<kbd>`{=html}/<kbd>/; s/`<\/kbd>`{=html}/<\/kbd>/; s/```{=html}//' > README_main.md
 # the above no longer needed as pandoc now handles kbd and code blocks correctly if output is gfm
 #
@@ -49,9 +49,9 @@ cat README-00-hdr.md README_main.md >../README.md
 # pandoc -s ../docs/quickget.1.md   -f markdown -t man -o ../docs/quickget.1
 # pandoc -s ../docs/quickemu_conf.1.md  -f markdown -t man -o ../docs/quickemu_conf.1
 
-pandoc -s $(cat quickemu_conf.lst)  -f markdown -t gfm+definition_lists   >  ../docs/quickemu_conf.1.md
-pandoc -s $(cat quickemu.lst)  -f markdown -t gfm+definition_lists > ../docs/quickemu.1.md
-pandoc -s $(cat quickget.lst)  -f markdown -t gfm+definition_lists  > ../docs/quickget.1.md
+pandoc -s $(cat quickemu_conf.lst)  -f markdown-smart -t gfm+definition_lists   >  ../docs/quickemu_conf.1.md
+pandoc -s $(cat quickemu.lst)  -f markdown-smart -t gfm+definition_lists > ../docs/quickemu.1.md
+pandoc -s $(cat quickget.lst)  -f markdown-smart -t gfm+definition_lists  > ../docs/quickget.1.md
 #
 pandoc -s ../docs/quickemu.1.md  -f gfm+definition_lists -t man -o ../docs/quickemu.1
 pandoc -s ../docs/quickget.1.md   -f gfm+definition_lists -t man -o ../docs/quickget.1
