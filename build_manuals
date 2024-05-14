@@ -33,11 +33,11 @@ cog -e -d -o quickemu.1-14-AllquickemuOptions-02coggged.md XXquickemu.1-14-Allqu
 
 pandoc --wrap=preserve --columns=120 -s $(cat README.lst)  -f markdown -t gfm  > README_main.md
 #| sed 's/`<kbd>`{=html}/<kbd>/; s/`<\/kbd>`{=html}/<\/kbd>/; s/```{=html}//' > README_main.md
-#
+# the above no longer needed as pandoc now handles kbd and code blocks correctly if output is gfm
 #
 cat README-00-hdr.md README_main.md >../README.md
 # ( cd .. ; cog -r README.md )
-
+# readme no longer has dynamic content
 
 
 
