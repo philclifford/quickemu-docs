@@ -6,8 +6,8 @@
 
 
 ``` shell
-quickget macos catalina
-quickemu --vm macos-catalina.conf
+quickget macos big-sur
+quickemu --vm macos-big-sur.conf
 ```
 
 macOS `mojave`, `catalina`, `big-sur`, `monterey`, `ventura` and
@@ -76,13 +76,13 @@ The default macOS configuration looks like this:
 
 ``` shell
 guest_os="macos"
-img="macos-catalina/RecoveryImage.img"
-disk_img="macos-catalina/disk.qcow2"
-macos_release="catalina"
+img="macos- big-sur/RecoveryImage.img"
+disk_img="macos- big-sur/disk.qcow2"
+macos_release=" big-sur"
 ```
 
 - `guest_os="macos"` instructs Quickemu to optimise for macOS.
-- `macos_release="catalina"` instructs Quickemu to optimise for a
+- `macos_release=" big-sur"` instructs Quickemu to optimise for a
     particular macOS release.
     - For example VirtIO Network and Memory Ballooning are available
         in Big Sur and newer, but not previous releases.
@@ -94,9 +94,8 @@ macos_release="catalina"
 There are some considerations when running macOS via Quickemu.
 
 -   Supported macOS releases:
-    -   High Sierra
     -   Mojave
-    -   Catalina **(Recommended)**
+    -   Catalina
     -   Big Sur
     -   Monterey
     -   Ventura
@@ -111,7 +110,7 @@ There are some considerations when running macOS via Quickemu.
 -   USB host and SPICE pass-through is:
     -   UHCI (USB 2.0) on macOS Catalina and earlier.
     -   XHCI (USB 3.0) on macOS Big Sur and newer.
--   Display resolution can only be changed via macOS System Preferences.
+-   Display resolution can be changed via `quickemu` using `--width` and `--height` command line arguments.
 -   **Full Duplex audio requires [VoodooHDA OC](https://github.com/chris1111/VoodooHDA-OC) or pass-through a USB audio-device to the macOS guest VM**.
     - NOTE! [Gatekeeper](https://disable-gatekeeper.github.io/) and [System Integrity Protection (SIP)](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection) need to be disabled to install VoodooHDA OC
 -   File sharing between guest and host is available via [virtio-9p](https://wiki.qemu.org/Documentation/9psetup) and [SPICE
