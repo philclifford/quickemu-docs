@@ -4,7 +4,6 @@
 
 `quickget` automatically downloads a macOS recovery image and creates a virtual machine configuration.
 
-
 ``` shell
 quickget macos big-sur
 quickemu --vm macos-big-sur.conf
@@ -43,7 +42,7 @@ macOS `mojave`, `catalina`, `big-sur`, `monterey`, `ventura` and
     you delete files inside the Virtual Machine. Without this step your
     macOS disk image will only ever get larger and will not shrink even
     when you delete lots of data inside macOS.
-   -   To enable TRIM, open the Terminal application and type the
+   - To enable TRIM, open the Terminal application and type the
         following command followed by pressing <kbd>enter</kbd> to tell macos to use the TRIM command on the hard disk when files are deleted:
 
 ``` shell
@@ -51,9 +50,9 @@ sudo trimforce enable
 ```
 
 You will be prompted to enter your account's password to gain the
-privilege needed. Once you've entered your password and pressed <kbd>enter</kbd> the command will request confirmation in the form of two questions that require you to type 
+privilege needed. Once you've entered your password and pressed <kbd>enter</kbd> the command will request confirmation in the form of two questions that require you to type
 <kbd>y</kbd> (for a "yes" response) followed by
-<kbd>enter</kbd> to confirm. 
+<kbd>enter</kbd> to confirm.
 
 If you press <kbd>enter</kbd> without first typing <kbd>y</kbd> the system will consider that a negative response as though you said "no":
 
@@ -93,29 +92,29 @@ macos_release=" big-sur"
 
 There are some considerations when running macOS via Quickemu.
 
--   Supported macOS releases:
-    -   Mojave
-    -   Catalina
-    -   Big Sur
-    -   Monterey
-    -   Ventura
-    -   Sonoma
--   `quickemu` will automatically download the required [OpenCore](https://github.com/acidanthera/OpenCorePkg) bootloader and OVMF firmware from [OSX-KVM](https://github.com/kholia/OSX-KVM).
--   Optimised by default, but no GPU acceleration is available.
-    -   Host CPU vendor is detected and guest CPU is optimised accordingly.
-    -   [VirtIO Block Media](https://www.kraxel.org/blog/2019/06/macos-qemu-guest/) is used for the system disk where supported.
-    -   [VirtIO `usb-tablet`](http://philjordan.eu/osx-virt/) is used for the mouse.
-    -   VirtIO Network (`virtio-net`) is supported and enabled on macOS Big Sur and newer, but earlier releases use `vmxnet3`.
-    -   VirtIO Memory Ballooning is supported and enabled on macOS Big Sur and newer but disabled for other support macOS releases.
--   USB host and SPICE pass-through is:
-    -   UHCI (USB 2.0) on macOS Catalina and earlier.
-    -   XHCI (USB 3.0) on macOS Big Sur and newer.
--   Display resolution can be changed via `quickemu` using `--width` and `--height` command line arguments.
--   **Full Duplex audio requires [VoodooHDA OC](https://github.com/chris1111/VoodooHDA-OC) or pass-through a USB audio-device to the macOS guest VM**.
+- Supported macOS releases:
+    - Mojave
+    - Catalina
+    - Big Sur
+    - Monterey
+    - Ventura
+    - Sonoma
+- `quickemu` will automatically download the required [OpenCore](https://github.com/acidanthera/OpenCorePkg) bootloader and OVMF firmware from [OSX-KVM](https://github.com/kholia/OSX-KVM).
+- Optimised by default, but no GPU acceleration is available.
+    - Host CPU vendor is detected and guest CPU is optimised accordingly.
+    - [VirtIO Block Media](https://www.kraxel.org/blog/2019/06/macos-qemu-guest/) is used for the system disk where supported.
+    - [VirtIO `usb-tablet`](http://philjordan.eu/osx-virt/) is used for the mouse.
+    - VirtIO Network (`virtio-net`) is supported and enabled on macOS Big Sur and newer, but earlier releases use `vmxnet3`.
+    - VirtIO Memory Ballooning is supported and enabled on macOS Big Sur and newer but disabled for other support macOS releases.
+- USB host and SPICE pass-through is:
+    - UHCI (USB 2.0) on macOS Catalina and earlier.
+    - XHCI (USB 3.0) on macOS Big Sur and newer.
+- Display resolution can be changed via `quickemu` using `--width` and `--height` command line arguments.
+- **Full Duplex audio requires [VoodooHDA OC](https://github.com/chris1111/VoodooHDA-OC) or pass-through a USB audio-device to the macOS guest VM**.
     - NOTE! [Gatekeeper](https://disable-gatekeeper.github.io/) and [System Integrity Protection (SIP)](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection) need to be disabled to install VoodooHDA OC
--   File sharing between guest and host is available via [virtio-9p](https://wiki.qemu.org/Documentation/9psetup) and [SPICE
+- File sharing between guest and host is available via [virtio-9p](https://wiki.qemu.org/Documentation/9psetup) and [SPICE
     webdavd](https://gitlab.gnome.org/GNOME/phodav/-/merge_requests/24).
--   Copy/paste via SPICE agent is **not available on macOS**.
+- Copy/paste via SPICE agent is **not available on macOS**.
 
 # macOS App Store
 
@@ -131,4 +130,3 @@ sudo rm /Library/Preferences/SystemConfiguration/NetworkInterfaces.plist
 Now reboot, and the App Store should work.
 
 There may be further advice and information about macOS guests in the project [wiki](https://github.com/quickemu-project/quickemu/wiki/03-Create-macOS-virtual-machines#automatically-create-macos-guests).
-
