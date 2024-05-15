@@ -10,8 +10,9 @@ documentation and manual pages.
 It consists of a `Makefile` that calls a script (`build_manuals`) which generates the [README](../README.md)
 and the contents of [../docs](../docs)
 
-** NOTE **
-Since much of the [README](../README.md) has been redirected to the wiki it no longer contains dynamic version-dependant content.
+> [!NOTE]  
+>Since much of the [README](../README.md) has been redirected to the wiki it no longer contains dynamic version-dependant content.
+
 It is likely that it can be removed from this process shortly, if indeed this sub-project has a future at all. Ideally CI/CD can also maintain
 any wiki content and keeping the man pages in step can be transferred to CI.  For now everything is regenerated, but probably only docs need
 submitting and README checking for local edits and changes
@@ -157,7 +158,6 @@ This should result in a perfect and consistent set of markdown docs and `man` pa
 It is essential to check and preview the generated assets before
 committing them or installing them since mistakes are easy, helpful software sometimes is too helpful, and `pandoc`, `cog` and github markdown sometimes choose
 to fight rather than cooperate so small edits or patches may be needed to achieve satisfactory outcomes.
-
 
 Once satisfied, you can optionally `install` the `man` pages so generated (and even the versions of the executables ) with
 
