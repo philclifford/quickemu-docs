@@ -41,13 +41,13 @@ These examples may save a little typing:
 This also applies to derivatives:
 
 ``` shell
-sudo apt install qemu bash coreutils ovmf grep jq mesa-utils pciutils procps python3 genisoimage usbutils util-linux sed socat spice-client-gtk libtss2-tcti-swtpm0 xdg-user-dirs zsync unzip
+sudo apt-get install bash coreutils curl genisoimage grep jq mesa-utils ovmf pciutils procps python3 qemu sed socat spice-client-gtk swtpm-tools unzip usbutils util-linux xdg-user-dirs xrandr zsync 
 ```
 
 #### Install requirements on Fedora hosts
 
 ``` shell
-sudo dnf install qemu bash coreutils edk2-tools grep jq mesa-demos pciutils procps python3 genisoimage usbutils util-linux sed socat spice-gtk-tools swtpm xdg-user-dirs xrandr unzip
+sudo dnf install bash coreutils curl edk2-tools genisoimage grep jq mesa-demos pciutils procps python3 qemu sed socat spice-gtk-tools swtpm unzip usbutils util-linux xdg-user-dirs xrandr zsync
 ```
 
 ### Install requirements on Gentoo
@@ -81,9 +81,15 @@ sudo emerge --ask --noreplace app-emulation/qemu \
 
 #### Install requirements on macOS hosts
 
-This is a **work in progress** (see [issue 447](https://github.com/quickemu-project/quickemu/issues/447)
-for other steps and changes that may enable running on MacOS)
+Install the Quickemu requirements using brew:
 
 ``` shell
-brew install qemu bash coreutils curl grep jq pciutils python@3.10 cdrtools gnu-sed spice-gtk zsync
+brew install bash cdrtools coreutils jq python3 qemu usbutils samba socat swtpm zsync
+```
+
+Now clone the project:
+
+``` shell
+git clone https://github.com/quickemu-project/quickemu
+cd quickemu
 ```
