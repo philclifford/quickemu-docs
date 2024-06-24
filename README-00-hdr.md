@@ -5,7 +5,7 @@
 
 **Quickly create and run optimised Windows, macOS and Linux virtual machines:**
 
-**Made with 💝 for <img src=".github/tux.png" align="top" width="24" alt="Tux (Linux)"/>**
+**Made with 💝 for <img src=".github/tux.png" align="top" width="24" alt="Tux (Linux)"/> & <img src=".github/apple.png" align="top" width="24" alt="Apple (macOS)"/>**
 </div>
 
 <p align="center">
