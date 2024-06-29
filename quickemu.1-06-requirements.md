@@ -16,7 +16,7 @@ When installing from source, you will need to install the following requirements
 - [python3](https://www.python.org/)
 - [mkisofs](http://cdrtools.sourceforge.net/private/cdrecord.html)
 - [usbutils](https://github.com/gregkh/usbutils)
-- [util-linux](https://github.com/karelzak/util-linux)
+- [util-linux](https://github.com/karelzak/util-linux); including `uuidgen`
 - [sed](https://www.gnu.org/software/sed/)
 - [socat](http://www.dest-unreach.org/socat/)
 - [spicy](https://gitlab.freedesktop.org/spice/spice-gtk)
@@ -47,7 +47,7 @@ sudo apt-get install bash coreutils curl genisoimage grep jq mesa-utils ovmf pci
 #### Install requirements on Fedora hosts
 
 ``` shell
-sudo dnf install bash coreutils curl edk2-tools genisoimage grep jq mesa-demos pciutils procps python3 qemu sed socat spice-gtk-tools swtpm unzip usbutils util-linux xdg-user-dirs xrandr zsync
+sudo dnf install bash coreutils curl edk2-tools genisoimage grep jq mesa-demos pciutils procps python3 qemu sed socat spice-gtk-tools swtpm unzip usbutils util-linux uuidgen-runtime xdg-user-dirs xrandr zsync
 ```
 
 ### Install requirements on Gentoo

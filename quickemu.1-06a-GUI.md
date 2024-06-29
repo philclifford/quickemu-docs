@@ -18,15 +18,3 @@ sudo apt install quickgui
 Many thanks to [Luke Wesley-Holley](https://github.com/Lukewh) and
 [Philipp Kiemle](https://github.com/daPhipz) for creating the
 **[Quickemu icons](https://github.com/Lukewh/quickemu-icons)** 🎨
-
-### qqX
-
-There is also a multi option desktop integrated text
-interface, the **quickemu quickget X terminal project**, or **qqX**,
-with lots of unique tools and utilities to help you make
-light work of installations, snapshots and disk management
-
-- **[qqX](https://github.com/TuxVinyards/qqX)** is independently curated
-    by [Alex Genovese](https://github.com/TuxVinyards) (see the github pages)
-
-![qqX-vmm](https://github.com/TuxVinyards/qqX/assets/3956806/18e5c495-8072-49a5-8b9c-e1302549efcf)
