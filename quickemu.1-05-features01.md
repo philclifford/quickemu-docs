@@ -3,7 +3,7 @@
 - Host support for **Linux and macOS**
 - **macOS** Sonoma, Ventura, Monterey, Big Sur, Catalina & Mojave
 - **Windows** 10 and 11 including TPM 2.0
-- **Windows Server** 2022 2019 2016 2012-r2
+- **Windows Server** 2022 2019 2016
 - [Ubuntu](https://ubuntu.com/desktop) and all the **[official Ubuntu
     flavours](https://ubuntu.com/download/flavours)**
 - **Nearly 1000 operating system editions are supported!**

@@ -3,7 +3,7 @@ title: QUICKEMU
 section: 1
 header: Quickemu User Manual
 footer: quickemu
-date: June 24, 2024
+date: August  2, 2024
 author: Martin Wimpress
 ---
 
