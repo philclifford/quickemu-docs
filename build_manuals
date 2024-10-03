@@ -51,7 +51,7 @@ cat README-00-hdr.md README_main.md >../README.md
 # pandoc -s ../docs/quickemu_conf.1.md  -f markdown -t man -o ../docs/quickemu_conf.1
 
 # shellcheck disable=SC2046
-pandoc -s $(cat quickemu_conf.lst)  -f markdown-smart -t gfm+definition_lists   >  ../docs/quickemu_conf.1.md
+pandoc -s $(cat quickemu_conf.lst)  -f markdown-smart -t gfm+definition_lists   >  ../docs/quickemu_conf.5.md
 # shellcheck disable=SC2046
 pandoc -s $(cat quickemu.lst)  -f markdown-smart -t gfm+definition_lists > ../docs/quickemu.1.md
 # shellcheck disable=SC2046
@@ -59,5 +59,5 @@ pandoc -s $(cat quickget.lst)  -f markdown-smart -t gfm+definition_lists  > ../d
 #
 pandoc -s ../docs/quickemu.1.md  -f gfm+definition_lists -t man -o ../docs/quickemu.1
 pandoc -s ../docs/quickget.1.md   -f gfm+definition_lists -t man -o ../docs/quickget.1
-pandoc -s ../docs/quickemu_conf.1.md  -f gfm+definition_lists -t man -o ../docs/quickemu_conf.1
+pandoc -s ../docs/quickemu_conf.5.md  -f gfm+definition_lists -t man -o ../docs/quickemu_conf.5
 
