@@ -1,9 +1,9 @@
 ---
 title: QUICKEMU_CONF
-section: 1
+section: 5
 header: Quickemu Configuration Manual
 footer: quickemu_conf
-date: August  2, 2024
+date: October  3, 2024
 author: Martin Wimpress
 ---
 
