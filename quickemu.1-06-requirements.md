@@ -89,9 +89,13 @@ Install the Quickemu requirements using brew:
 brew install bash cdrtools coreutils jq python3 qemu usbutils samba socat swtpm zsync
 ```
 
-Now clone the project:
+Then you can tap the Quickemu repo and install the latest release or the HEAD of main via `brew`
 
 ``` shell
-git clone https://github.com/quickemu-project/quickemu
-cd quickemu
+brew tap quickemu-project/quickemu https://github.com/quickemu-project/quickemu
+
+brew install quickemu
+# For the latest release or
+brew install quickemu --HEAD
+# for dev build / fixes pending a release
 ```
