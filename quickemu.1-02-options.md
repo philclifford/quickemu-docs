@@ -107,5 +107,8 @@ You can also pass optional parameters
 **\-\-extra_args \<arguments\>**  
 : Pass additional arguments to qemu
 
+**\-\-paranoid**  
+: Disable USB redirection, USB SmartCard, SSH and folder sharing.
+
 **\-\-version**  
 :    Print version
