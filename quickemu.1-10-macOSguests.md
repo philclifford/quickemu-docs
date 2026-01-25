@@ -77,13 +77,13 @@ The default macOS configuration looks like this:
 
 ``` shell
 guest_os="macos"
-img="macos- big-sur/RecoveryImage.img"
-disk_img="macos- big-sur/disk.qcow2"
-macos_release=" big-sur"
+img="macos-big-sur/RecoveryImage.img"
+disk_img="macos-big-sur/disk.qcow2"
+macos_release="big-sur"
 ```
 
 - `guest_os="macos"` instructs Quickemu to optimise for macOS.
-- `macos_release=" big-sur"` instructs Quickemu to optimise for a
+- `macos_release="big-sur"` instructs Quickemu to optimise for a
     particular macOS release.
     - For example VirtIO Network and Memory Ballooning are available
         in Big Sur and newer, but not previous releases.
