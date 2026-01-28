@@ -4,7 +4,7 @@
 
 `quickget` automatically downloads a macOS recovery image and creates a virtual machine configuration.
 
-Note: Some VPN users may need to [turn off their VPN](https://github.com/quickemu-project/quickemu/issues/1391#issuecomment-3506845235) in order to download a recovery image. Some other users may find [using a VPN](https://github.com/quickemu-project/quickemu/issues/1391#issuecomment-2429146013) necessary in order to download a recover image. 
+Note: Some VPN users may need to [turn off their VPN](https://github.com/quickemu-project/quickemu/issues/1391#issuecomment-3506845235) in order to download a recovery image. Some other users may find [using a VPN](https://github.com/quickemu-project/quickemu/issues/1391#issuecomment-2429146013) necessary in order to download a recovery image.
 
 ``` shell
 quickget macos big-sur
