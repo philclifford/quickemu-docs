@@ -18,7 +18,7 @@ You can also pass optional parameters
   : Delete the entire VM and its configuration
 
 **\-\-display**  
-  : Select display backend. 'sdl' (default), 'gtk', 'none', 'spice' or 'spice-app'
+  : Select display backend. 'gtk' (default), 'sdl', 'cocoa', 'none', 'spice' or 'spice-app'
 
 **\-\-fullscreen**  
   : Starts VM in full screen mode (Ctl+Alt+f to exit)
