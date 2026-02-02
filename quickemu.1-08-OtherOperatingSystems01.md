@@ -15,6 +15,9 @@ You can also use `quickget` with advanced options :
    --list                                    : List all supported systems
    --list-csv                                : List everything in csv format
    --list-json                               : List everything in json format
+------------------------------------ Flags -------------------------------------
+--create-config:
+  --disable-unattended                       : Force quickget not to set up an unattended installation
 
 ```
 

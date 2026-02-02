@@ -1,2 +1,3 @@
 #!/bin/bash
 ./quickget --help|grep '^   -'|grep -v '^---' 
+./quickget --help | grep -A2 Flags
